@@ -1,0 +1,45 @@
+{
+    "hotels": [
+      {
+        "id": 1,
+        "name": "Grand Beachside Resort",
+        "description": "Luxurious beachfront resort with stunning ocean views",
+        "image": "https://example.com/images/grand_beachside_resort.jpg",
+        "location": {
+          "city": "Miami",
+          "state": "Florida",
+          "country": "USA"
+        },
+        "rating": 4.5,
+        "amenities": [
+          "Swimming pool",
+          "Spa",
+          "Fitness center",
+          "Restaurant",
+          "Bar"
+        ],
+        "price": 200.00,
+        "currency": "USD"
+      },
+      {
+        "id": 2,
+        "name": "Cozy City Hotel",
+        "description": "Charming boutique hotel in the heart of the city",
+        "image": "https://example.com/images/cozy_city_hotel.jpg",
+        "location": {
+          "city": "London",
+          "state": null,
+          "country": "UK"
+        },
+        "rating": 4.2,
+        "amenities": [
+          "Free Wi-Fi",
+          "Breakfast included",
+          "Laundry service",
+          "Business center"
+        ],
+        "price": 120.00,
+        "currency": "GBP"
+      }
+    ]
+  }
