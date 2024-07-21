@@ -1,45 +1,184 @@
 {
-    "hotels": [
-      {
-        "id": 1,
-        "name": "Grand Beachside Resort",
-        "description": "Luxurious beachfront resort with stunning ocean views",
-        "image": "https://example.com/images/grand_beachside_resort.jpg",
-        "location": {
-          "city": "Miami",
-          "state": "Florida",
-          "country": "USA"
+  "hotels": [
+    {
+      "id": 1,
+      "name": "Grand Beachside Resort",
+      "description": "Luxurious beachfront resort with stunning ocean views",
+      "image": [
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/b96af669.jpg?impolicy=resizecrop&rw=1200&ra=fit"
         },
-        "rating": 4.5,
-        "amenities": [
-          "Swimming pool",
-          "Spa",
-          "Fitness center",
-          "Restaurant",
-          "Bar"
-        ],
-        "price": 200.00,
-        "currency": "USD"
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/c9f55d81.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        },
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/b5739b5d.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        },
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/05800c1a.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        }
+      ],
+      "location": {
+        "city": "Miami",
+        "state": "Florida",
+        "country": "USA"
       },
-      {
-        "id": 2,
-        "name": "Cozy City Hotel",
-        "description": "Charming boutique hotel in the heart of the city",
-        "image": "https://example.com/images/cozy_city_hotel.jpg",
-        "location": {
-          "city": "London",
-          "state": null,
-          "country": "UK"
+      "rating": 4.5,
+      "view": "excellent",
+      "amenities": [
+        "Swimming pool",
+        "Spa",
+        "Fitness center",
+        "Restaurant",
+        "Bar"
+      ],
+      "price": 200.0,
+      "currency": "USD",
+      "reviews": "66 reviews"
+    },
+    {
+      "id": 2,
+      "name": "Cozy City Hotel",
+      "description": "Charming boutique hotel in the heart of the city",
+      "image": [
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/b96af669.jpg?impolicy=resizecrop&rw=1200&ra=fit"
         },
-        "rating": 4.2,
-        "amenities": [
-          "Free Wi-Fi",
-          "Breakfast included",
-          "Laundry service",
-          "Business center"
-        ],
-        "price": 120.00,
-        "currency": "GBP"
-      }
-    ]
-  }
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/c9f55d81.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        },
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/b5739b5d.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        },
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/05800c1a.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        }
+      ],
+      "location": {
+        "city": "London",
+        "state": null,
+        "country": "UK"
+      },
+      "rating": 4.2,
+      "view": "excellent",
+      "amenities": [
+        "Free Wi-Fi",
+        "Breakfast included",
+        "Laundry service",
+        "Business center"
+      ],
+      "price": 120.0,
+      "currency": "GBP",
+      "reviews": "45 reviews"
+    },
+    {
+      "id": 3,
+      "name": "cottage View Lodge",
+      "description": "Cozy mountain lodge with breathtaking views of the surrounding peaks",
+      "image": [
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/b96af669.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        },
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/c9f55d81.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        },
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/b5739b5d.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        },
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/05800c1a.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        }
+      ],
+      "location": {
+        "city": "Aspen",
+        "state": "Colorado",
+        "country": "USA"
+      },
+      "rating": 4.8,
+      "view":"excellent",
+      "amenities": [
+        "Ski-in/ski-out access",
+        "Hot tub",
+        "Fitness center",
+        "Restaurant",
+        "Bar"
+      ],
+      "price": 350.0,
+      "currency": "USD",
+      "reviews": "100 reviews"
+    },
+    {
+      "id": 4,
+      "name": "Tropical Oasis Resort",
+      "description": "Luxurious resort surrounded by lush tropical gardens and a private beach",
+      "image": [
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/b96af669.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        },
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/c9f55d81.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        },
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/b5739b5d.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        },
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/05800c1a.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        }
+      ],
+      "location": {
+        "city": "Cancun",
+        "state": "Quintana Roo",
+        "country": "Mexico"
+      },
+      "rating": 4.9,
+      "view":"excellent",
+      "amenities": [
+        "Private beach",
+        "Swimming pool",
+        "Spa",
+        "Fitness center",
+        "Restaurant",
+        "Bar"
+      ],
+      "price": 400.0,
+      "currency": "USD",
+      "reviews":"45 reviews"
+        },
+    {
+      "id": 5,
+      "name": "Historic City Center Hotel",
+      "description": "Charming hotel located in the heart of the historic city center",
+      "image": [
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/b96af669.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        },
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/c9f55d81.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        },
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/b5739b5d.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        },
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/05800c1a.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        }
+      ],
+      "location": {
+        "city": "Rome",
+        "state": "naples",
+        "country": "Italy"
+      },
+      "rating": 4.6,
+      "view":"excellent",
+      "amenities": [
+        "Free Wi-Fi",
+        "Breakfast included",
+        "Laundry service",
+        "Business center",
+        "Restaurant"
+      ],
+      "price": 180.0,
+      "currency": "EUR",
+      "reviews":"66 reviews"
+    }
+  ]
+}

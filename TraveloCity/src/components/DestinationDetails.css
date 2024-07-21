@@ -1,0 +1,40 @@
+.topdiv{
+    border: 2px solid black;
+    margin: 5px;
+    width: 400px !important;
+}
+.sidebar{
+    /* display: flex; */
+    /* gap: 2; */
+    border: 2px solid red;
+    margin-top: 3px;
+    margin-left: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-right: 2px; */
+    width: 400px !important;
+}
+.pricediv{
+    display: flex;
+    gap: 10px;
+}
+.css-1t1xvy7 {
+    width: 53%;
+    margin-top: 25px;
+}
+.slider-container{
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+.carousel .thumbs-wrapper {
+    margin: 0px !important;
+    /* overflow: hidden; */
+}
+
+.css-9n7q4a {
+    /* padding: var(--chakra-space-0); */
+    padding: 0px !important;
+}
