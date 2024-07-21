@@ -1,10 +1,20 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { ChakraProvider } from '@chakra-ui/react';
+import App from './App';
+import { FinalSubmit } from './components/Payment/FinalSubmit';
+import { Payment } from './components/Payment/Payment';
+import {PriceDetail} from './components/Payment/PriceDetail';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ChakraProvider>
+      <App />
+      <FinalSubmit/>
+      <Payment/>
+      <PaymentForm/>
+      <PriceDetail/>
+    </ChakraProvider>
   </React.StrictMode>,
-)
+  document.getElementById('root')
+);
