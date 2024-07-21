@@ -1,12 +1,12 @@
 .topdiv{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin: 5px;
     width: 400px !important;
 }
 .sidebar{
     /* display: flex; */
     /* gap: 2; */
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin-top: 3px;
     margin-left: 3px;
     display: flex;

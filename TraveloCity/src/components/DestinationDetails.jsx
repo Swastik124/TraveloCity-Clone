@@ -386,7 +386,7 @@ const [compareproperties,setcompareproperties]=React.useState(false)
         </div>
         <div
           style={{
-            border: "2px solid black",
+            // border: "2px solid black",
             width: "65%",
             display: "flex",
             flexDirection: "column",
@@ -412,7 +412,8 @@ const [compareproperties,setcompareproperties]=React.useState(false)
               return (
                 <div
                   style={{
-                    border: "2px solid brown",
+                    border: "2px solid grey",
+                    borderRadius: "20px",
                     display: "flex",
                     flexDirection: "row",
                     justifyContent: "space-evenly",
@@ -448,7 +449,7 @@ const [compareproperties,setcompareproperties]=React.useState(false)
                   </div>
                   <div
                     style={{
-                      border: "1px solid yellow",
+                      // border: "1px solid yellow",
                     }}
                   >
                     <div>
@@ -464,7 +465,7 @@ const [compareproperties,setcompareproperties]=React.useState(false)
                       style={{
                         display: "flex",
                         justifyContent: "space-between",
-                        border: "1px solid green",
+                        // border: "1px solid green",
                         gap: "20px",
                       }}
                     >
@@ -504,7 +505,7 @@ const [compareproperties,setcompareproperties]=React.useState(false)
 
                       <div
                         style={{
-                          border: "2px solid pink",
+                          // border: "2px solid pink",
                           display: "flex",
                           flexDirection: "column",
                           alignItems: "flex-end",
