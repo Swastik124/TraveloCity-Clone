@@ -118,7 +118,7 @@ const [compareproperties,setcompareproperties]=React.useState(false)
               borderRadius: "20px",
             }}
           >
-            <h1>compare-properties</h1> &nbsp;&nbsp;
+            <h4>compare-properties</h4> &nbsp;&nbsp;
             <Switch id="compare properties" onChange={(e)=>setcompareproperties(!compareproperties)}/>
           </div>
           <hr style={{ marginTop: "20px", width: "233px" }} />
@@ -201,8 +201,8 @@ const [compareproperties,setcompareproperties]=React.useState(false)
               <RangeSliderThumb index={1} />
             </RangeSlider> */}
             <RangeSlider onChange={rangeSlider} defaultValue={[minPrice, maxPrice]} min={0} max={800} step={30}>
-  <RangeSliderTrack bg='red.100'>
-    <RangeSliderFilledTrack bg='tomato' />
+  <RangeSliderTrack bg='blue.100'>
+    <RangeSliderFilledTrack bg='blue' />
   </RangeSliderTrack>
   <RangeSliderThumb boxSize={6} index={0} />
   <RangeSliderThumb boxSize={6} index={1} />
