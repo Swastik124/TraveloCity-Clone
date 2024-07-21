@@ -21,16 +21,16 @@ const Header = () =>{
     window.location.href = "https://www.travelocity.com/trips"
   }
   return (
-    <div>
-        <div className="Header">
-          <div className="sub-header">
+    <div className="Header">
+        <div className='sub-header'>
+          <div className="sub-header1">
             <img src=".\src\assets\logo.png" alt="" className="logo" />
             <Box>
               {/* borderRight={<ChevronDownIcon/>} */}
               <Menu >
-                <MenuButton as={Button} height='25px' backgroundColor='#0b428b' color='white' id='Shop-travel' _hover="backgroundColor='#0b428b'" >Shop travel</MenuButton>
+                <MenuButton as={Button} _hover="backgroundColor='#0b428b'" height='25px' backgroundColor='#0b428b' color='white' id='Shop-travel'>Shop travel</MenuButton>
                   <MenuList>
-                    <MenuItem as='a' href='https://www.google.com' ><b>Stays</b></MenuItem>
+                    <MenuItem as='a' href='#' ><b>Stays</b></MenuItem>
                     <MenuItem as='a' href='#'><b>Flights</b></MenuItem>
                     <MenuItem as='a' href='#'><b>Cars</b></MenuItem>
                     <MenuItem as='a' href='#'><b>Packages</b></MenuItem>
