@@ -28,7 +28,7 @@ const Header = () =>{
             <Box>
               {/* borderRight={<ChevronDownIcon/>} */}
               <Menu >
-                <MenuButton as={Button} height='25px' backgroundColor='#0b428b' color='white' id='Shop-travel' _hover="backgroundColor='#0b428b'">Shop travel</MenuButton>
+                <MenuButton as={Button} height='25px' backgroundColor='#0b428b' color='white' id='Shop-travel' _hover="backgroundColor='#0b428b'" >Shop travel</MenuButton>
                   <MenuList>
                     <MenuItem as='a' href='https://www.google.com' ><b>Stays</b></MenuItem>
                     <MenuItem as='a' href='#'><b>Flights</b></MenuItem>
@@ -48,10 +48,10 @@ const Header = () =>{
           </div>
           <div className="sub-header2">
           <Button leftIcon={<MdFileDownload/>} colorScheme='white' variant='outline' id='Get-the-App' onClick={DownloadtheApp} size='md'>Get the App</Button>
-          <Button onClick={Listyourproperty} id='Listyourproperty' >List your property</Button>
-          <Button onClick={Support} id='Support'>Support</Button>
-          <Button onClick={Trips}>Trips</Button>
-          <Button >Sign in</Button>
+          <Button onClick={Listyourproperty} id='Listyourproperty' backgroundColor='#0b428b' color='white'>List your property</Button>
+          <Button onClick={Support} id='Support' backgroundColor='#0b428b' color='white'>Support</Button>
+          <Button onClick={Trips} backgroundColor='#0b428b' color='white'>Trips</Button>
+          <Button backgroundColor='#0b428b' color='white'>Sign in</Button>
           {/* onClick={Signin} */}
           
           </div>
