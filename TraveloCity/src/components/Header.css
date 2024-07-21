@@ -1,0 +1,30 @@
+.Header{
+    background-color: #0b428b;
+    display: flex;
+    align-items: center;
+}
+.sub-header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #0b428b;
+}
+.sub-header2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 7px;
+    margin-left: 112%;
+}
+#Get-the-App{
+    width: 30%;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+.logo{
+    width: 200px;
+}
+.sub-header2 > Button{
+    height: 25px;
+}
