@@ -1,15 +1,18 @@
 import React from 'react'
-import Header from './components/Header'
-import Footer from './components/Footer';
+import DestinationDetails from './components/DestinationDetails'
+// import Header from './components/Header'
+// import Footer from './components/Footer';
+// import Header from './components/Header'
 function App() {
 
   return (
-    <>
-      <div>
-          <Header></Header>
-          <Footer></Footer>
-      </div>
-    </>
+  <div>
+    {/* <Header /> */}
+    <Header></Header>
+    <Footer></Footer>
+
+    <DestinationDetails/>
+  </div>
   )
 }
 
