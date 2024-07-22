@@ -74,73 +74,44 @@ const [compareproperties,setcompareproperties]=React.useState(false)
   
   return (
     <>
-      <div style={{ display: "flex" }}>
+      <div style={{ display: "flex" ,gap:"20px"}}>
         <div className="sidebar">
           {/* map */}
           <div
-            style={{
-              border: "1px solid grey",
-              borderRadius: "20px",
-              textAlign: "center",
-              width: "100%",
-              // height: "60px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              flexDirection: "column",
-              margin: "2px",
-            }}
+           className="mapStyle"
+          
           >
             <img
               src="https://maps.googleapis.com/maps/api/staticmap?&size=600x400&map_id=3b266eb50d2997c6&markers=icon:https%3A%2F%2Fa.travel-assets.com%2Ftravel-assets-manager%2Feg-maps%2Fproperty.png%7C21.62336%2C87.52161%7C21.62625%2C87.50127%7C21.62442%2C87.50417&channel=expedia-HotelInformation&maptype=roadmap&key=AIzaSyCYjQus5kCufOpSj932jFoR_AJiL9yiwOw&signature=66zdHVHlReVsXTMuRDTpLnGawSY="
               alt="area map"
               width="100%"
-              style={{
-                borderRadius: "20px",
-                borderBottomRightRadius: "0px",
-                borderBottomLeftRadius: "0px",
-              }}
+              className="mapImage"
+             
             />
             <br />
             <a href="https://www.travelocity.com/Hotel-Search?adults=2&allowPreAppliedFilters=false&destination=Bhubaneshwar%2C%20India%20%28BBI-Biju%20Patnaik%29&endDate=2024-08-04&price=240&price=422&regionId=6026385&semdtl=&sort=RECOMMENDED&startDate=2024-08-03&theme=&useRewards=true&userIntent=&pwaOverlay=map">View in a map</a>
           </div>
           <br />
-          {/* <hr style={{ marginTop: "20px", width: "233px" }} /> */}
-          {/* compare-properties */}
+        
           <div
-            style={{
-              border: "1px solid grey",
-              width: "55%",
-              height: "60px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              borderRadius: "20px",
-            }}
+          className="compareStyle"
+           
           >
             <h4>compare-properties</h4> &nbsp;&nbsp;
             <Switch id="compare properties" onChange={(e)=>setcompareproperties(!compareproperties)}/>
           </div>
           <hr style={{ marginTop: "20px", width: "233px" }} />
-          {/* Search by property name */}
+         
           <div>
             <h2 style={{ fontSize: "20px" }}> Search by property name</h2>
         
-            {/* <SearchIcon
-                color="black"
-                style={{ position: "relative", left: "20px",top:"34px" }}
-              /> */}
-            <input onChange={searchHotel} placeholder="e.g. Marriott" style={{
-                border: "2px solid grey",
-                display: "flex",
-                width: "100%",
-                height: "45px",
-                alignItems: "center",
-                gap: "40px",
-                borderRadius: "20px",
-              }}></input>
+           
+            <input onChange={searchHotel} placeholder="e.g. Marriott" 
+            className="searchStyle"
+           
+              ></input>
               
-              {/* <h2>e.g. Marriott</h2> */}
+             
           </div>
           <hr style={{ marginTop: "20px", width: "233px" }} />
           <div style={{ width: "55%" }}>
@@ -179,27 +150,7 @@ const [compareproperties,setcompareproperties]=React.useState(false)
                 />
               </div>
             </div>
-            {/* <Range
-              style={{ width: "100%", marginTop: "20px" }}
-              aria-label="slider-ex-1"
-              defaultValue={30}
-            >
-              <SliderTrack>
-                <SliderFilledTrack />
-              </SliderTrack>
-              <SliderThumb />
-            </Range> */}
-            {/* <RangeSlider
-              onChange={rangeSlider}
-              aria-label={["min", "max"]}
-              defaultValue={[minPrice, maxPrice]}
-            >
-              <RangeSliderTrack>
-                <RangeSliderFilledTrack />
-              </RangeSliderTrack>
-              <RangeSliderThumb index={0} />
-              <RangeSliderThumb index={1} />
-            </RangeSlider> */}
+            
             <RangeSlider onChange={rangeSlider} defaultValue={[minPrice, maxPrice]} min={0} max={800} step={30}>
   <RangeSliderTrack bg='blue.100'>
     <RangeSliderFilledTrack bg='blue' />
@@ -225,64 +176,32 @@ const [compareproperties,setcompareproperties]=React.useState(false)
               <h4 style={{ fontSize: "15px" }}>Star rating</h4>
               <div style={{ display: "flex", gap: "10px", width: "15rem" }}>
                 <button
-                  style={{
-                    border: "2px solid grey",
-                    display: "flex",
-                    width: "5rem",
-                    height: "45px",
-                    alignItems: "center",
-                    gap: "6px",
-                    borderRadius: "10px",
-                    justifyContent: "center",
-                  }}
+                className="starButtonStyle"
+                  
                 >
                   {/* <Icon name="star" size="24px" /> */}
                   <h1>1</h1>
                   <StarIcon />
                 </button>
                 <button
-                  style={{
-                    border: "2px solid grey",
-                    display: "flex",
-                    width: "5rem",
-                    height: "45px",
-                    alignItems: "center",
-                    gap: "6px",
-                    borderRadius: "10px",
-                    justifyContent: "center",
-                  }}
+                 className="starButtonStyle"
+                 
                 >
                   {/* <Icon name="star" size="24px" /> */}
                   <h1>2</h1>
                   <StarIcon />
                 </button>
                 <button
-                  style={{
-                    border: "2px solid grey",
-                    display: "flex",
-                    width: "5rem",
-                    height: "45px",
-                    alignItems: "center",
-                    gap: "6px",
-                    borderRadius: "10px",
-                    justifyContent: "center",
-                  }}
+                 className="starButtonStyle"
+                 
                 >
                   {/* <Icon name="star" size="24px" /> */}
                   <h1>3</h1>
                   <StarIcon />
                 </button>
                 <button
-                  style={{
-                    border: "2px solid grey",
-                    display: "flex",
-                    width: "5rem",
-                    height: "45px",
-                    alignItems: "center",
-                    gap: "6px",
-                    borderRadius: "10px",
-                    justifyContent: "center",
-                  }}
+                 className="starButtonStyle"
+                
                 >
                   {/* <Icon name="star" size="24px" /> */}
                   <h1>4</h1>
@@ -290,16 +209,8 @@ const [compareproperties,setcompareproperties]=React.useState(false)
                 </button>
                 <br />
                 <button
-                  style={{
-                    border: "2px solid grey",
-                    display: "flex",
-                    width: "5rem",
-                    height: "45px",
-                    alignItems: "center",
-                    gap: "6px",
-                    borderRadius: "10px",
-                    justifyContent: "center",
-                  }}
+                 className="starButtonStyle"
+                  
                 >
                   {/* <Icon name="star" size="24px" /> */}
                   <h1>5</h1>
@@ -385,13 +296,8 @@ const [compareproperties,setcompareproperties]=React.useState(false)
           </div>
         </div>
         <div
-          style={{
-            // border: "2px solid black",
-            width: "65%",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-end",
-          }}
+        className="topStyle"
+         
         >
           <div className="topdiv">
             <FormControl>
@@ -411,6 +317,7 @@ const [compareproperties,setcompareproperties]=React.useState(false)
             {data?.map((hotel) => {
               return (
                 <div
+                className="hotelCard"
                   style={{
                     border: "2px solid grey",
                     borderRadius: "20px",
@@ -427,10 +334,7 @@ const [compareproperties,setcompareproperties]=React.useState(false)
                       // marginLeft: "0px",
                     }}
                   >
-                    {/* <img
-                src="https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/b96af669.jpg?impolicy=resizecrop&rw=1200&ra=fit"
-                alt="hotel image"
-              /> */}
+                   
                     <Box w="100%" p={4} color="white">
                       <Carousel infiniteLoop>
                         {hotel.image.map((slide) => {
@@ -448,9 +352,7 @@ const [compareproperties,setcompareproperties]=React.useState(false)
                     {/* </div> */}
                   </div>
                   <div
-                    style={{
-                      // border: "1px solid yellow",
-                    }}
+                   
                   >
                     <div>
                       <h3 style={{ fontSize: "20px", fontWeight: "bolder" }}>
@@ -462,12 +364,8 @@ const [compareproperties,setcompareproperties]=React.useState(false)
                       </p>
                     </div>
                     <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                        // border: "1px solid green",
-                        gap: "20px",
-                      }}
+                    className="proPrDiv"
+                      
                     >
                       <div>
                         <div style={{ color: "green" }}>
@@ -475,24 +373,11 @@ const [compareproperties,setcompareproperties]=React.useState(false)
                           <p>Reserve now , pay later</p>
                         </div>
                         <div
-                          style={{
-                            display: "flex",
-                            gap: "5px",
-                            alignItems: "center",
-                          }}
+                        className="prDiv"
+                         
                         >
                           <div
-                            style={{
-                              backgroundColor: "green",
-                              color: "white",
-                              fontWeight: "bold",
-                              borderRadius: "5px",
-                              width: "2rem",
-                              height: "2rem",
-                              display: "flex",
-                              justifyContent: "center",
-                              alignItems: "center",
-                            }}
+                          className="hotelRating"
                           >
                             {hotel.rating}
                           </div>
@@ -504,12 +389,7 @@ const [compareproperties,setcompareproperties]=React.useState(false)
                       </div>
 
                       <div
-                        style={{
-                          // border: "2px solid pink",
-                          display: "flex",
-                          flexDirection: "column",
-                          alignItems: "flex-end",
-                        }}
+                      className="hotelPrice"
                       >
                         <p>${hotel.price}</p>
                         <p> includes taxes and fees</p>
