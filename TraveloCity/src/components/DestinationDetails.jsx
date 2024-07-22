@@ -33,85 +33,112 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import dbdata from "../../db.json";
 
 function DestinationDetails() {
-  const [value, setValue] = React.useState("1");
-  const [minPrice, setMinPrice] = React.useState(100);
-  const [maxPrice, setMaxPrice] = React.useState(200);
-  const [data, setData] = React.useState([]);
-const [compareproperties,setcompareproperties]=React.useState(false)
-  console.log(data);
+  const [minPrice, setMinPrice] = useState(100);
+  const [maxPrice, setMaxPrice] = useState(200);
+  const [data, setData] = useState([]);
+  const [compareproperties, setcompareproperties] = useState(false);
   const rangeSlider = (e) => {
-    console.log(e);
     setMinPrice(e[0]);
     setMaxPrice(e[1]);
-    console.log(data)
-    const filteredData = dbdata.hotels.filter((hotel) => hotel.price >= e[0] && hotel.price <= e[1]);
-    console.log(filteredData, "filteredData");
+    const filteredData = dbdata.hotels.filter(
+      (hotel) => hotel.price >= e[0] && hotel.price <= e[1]
+    );
     setData(filteredData);
-};
+  };
   useEffect(() => {
-    setData(dbdata.hotels)
-  }, [])
+    setData(dbdata.hotels);
+  }, []);
 
-  const priceChangeMin=(e)=>{
+  const priceChangeMin = (e) => {
     setMinPrice(e.target.value);
-    const filteredData = dbdata.hotels.filter((hotel) => hotel.price >= e.target.value && hotel.price <= maxPrice);
-    console.log(filteredData, "filteredData");
+    const filteredData = dbdata.hotels.filter(
+      (hotel) => hotel.price >= e.target.value && hotel.price <= maxPrice
+    );
     setData(filteredData);
-  }
-  const priceChangeMax=(e)=>{
+  };
+  const priceChangeMax = (e) => {
     setMaxPrice(e.target.value);
-    const filteredData = dbdata.hotels.filter((hotel) => hotel.price >= minPrice && hotel.price <= e.target.value);
-    console.log(filteredData, "filteredData");
+    const filteredData = dbdata.hotels.filter(
+      (hotel) => hotel.price >= minPrice && hotel.price <= e.target.value
+    );
     setData(filteredData);
-  }
-  const searchHotel=(e)=>{
-//     const word = "hello";
-// const firstThreeChars = word.slice(0, 3);
-// console.log(firstThreeChars); // Output: "hel"
-    const filteredData = dbdata.hotels.filter((hotel) => hotel.name.toLowerCase().slice(0, e.target.value.length)===e.target.value);
+  };
+  const searchHotel = (e) => {
+    const filteredData = dbdata.hotels.filter(
+      (hotel) =>
+        hotel.name.toLowerCase().slice(0, e.target.value.length) ===
+        e.target.value
+    );
     setData(filteredData);
-  }
-  
+  };
+
+  const stardata = (rating) => {
+    const maxrating = rating + 0.9;
+    const filteredData = dbdata.hotels.filter(
+      (e) => e.rating >= rating && e.rating <= maxrating
+    );
+    setData(filteredData);
+  };
+  const propertyHandle = (property) => {
+    if (property === "hotel") {
+      const filteredData = dbdata.hotels.filter((e) => {
+        const namesplitarray = e.name.split(" ");
+        const lowercasenames = namesplitarray.map((e) => e.toLowerCase());
+        const findHotel = lowercasenames.find((e) => e === property);
+        if (findHotel) {
+          return e;
+        }
+      });
+      setData(filteredData);
+    } else {
+      const filteredData = dbdata.hotels.filter((e) => {
+        const namesplitarray = e.name.split(" ");
+        const lowercasenames = namesplitarray.map((e) => e.toLowerCase());
+
+        const findHotel = lowercasenames.find((e) => e === "hotel");
+        if (!findHotel) {
+          return e;
+        }
+      });
+      setData(filteredData);
+    }
+  };
+
   return (
     <>
-      <div style={{ display: "flex" ,gap:"20px"}}>
+      <div style={{ display: "flex", gap: "20px" }}>
         <div className="sidebar">
-          {/* map */}
-          <div
-           className="mapStyle"
           
-          >
+            
+          <div className="mapStyle">
             <img
               src="https://maps.googleapis.com/maps/api/staticmap?&size=600x400&map_id=3b266eb50d2997c6&markers=icon:https%3A%2F%2Fa.travel-assets.com%2Ftravel-assets-manager%2Feg-maps%2Fproperty.png%7C21.62336%2C87.52161%7C21.62625%2C87.50127%7C21.62442%2C87.50417&channel=expedia-HotelInformation&maptype=roadmap&key=AIzaSyCYjQus5kCufOpSj932jFoR_AJiL9yiwOw&signature=66zdHVHlReVsXTMuRDTpLnGawSY="
               alt="area map"
               width="100%"
               className="mapImage"
-             
             />
-            <br />
-            <a href="https://www.travelocity.com/Hotel-Search?adults=2&allowPreAppliedFilters=false&destination=Bhubaneshwar%2C%20India%20%28BBI-Biju%20Patnaik%29&endDate=2024-08-04&price=240&price=422&regionId=6026385&semdtl=&sort=RECOMMENDED&startDate=2024-08-03&theme=&useRewards=true&userIntent=&pwaOverlay=map">View in a map</a>
+            <a href="https://www.travelocity.com/Hotel-Search?adults=2&allowPreAppliedFilters=false&destination=Bhubaneshwar%2C%20India%20%28BBI-Biju%20Patnaik%29&endDate=2024-08-04&price=240&price=422&regionId=6026385&semdtl=&sort=RECOMMENDED&startDate=2024-08-03&theme=&useRewards=true&userIntent=&pwaOverlay=map" className="viewmap">View in a map</a>
           </div>
+
           <br />
-        
-          <div
-          className="compareStyle"
-           
-          >
+
+          <div className="compareStyle">
             <h4>compare-properties</h4> &nbsp;&nbsp;
-            <Switch id="compare properties" onChange={(e)=>setcompareproperties(!compareproperties)}/>
+            <Switch
+              id="compare properties"
+              onChange={(e) => setcompareproperties(!compareproperties)}
+            />
           </div>
           <hr style={{ marginTop: "20px", width: "233px" }} />
-         
+
           <div>
             <h2 style={{ fontSize: "20px" }}> Search by property name</h2>
-        
-           
-            <input onChange={searchHotel} placeholder="e.g. Marriott" 
-            className="searchStyle"
-           
-              ></input>
-              
-             
+
+            <input
+              onChange={searchHotel}
+              placeholder="e.g. Marriott"
+              className="searchStyle"
+            ></input>
           </div>
           <hr style={{ marginTop: "20px", width: "233px" }} />
           <div style={{ width: "55%" }}>
@@ -150,18 +177,24 @@ const [compareproperties,setcompareproperties]=React.useState(false)
                 />
               </div>
             </div>
-            
-            <RangeSlider onChange={rangeSlider} defaultValue={[minPrice, maxPrice]} min={0} max={800} step={30}>
-  <RangeSliderTrack bg='blue.100'>
-    <RangeSliderFilledTrack bg='blue' />
-  </RangeSliderTrack>
-  <RangeSliderThumb boxSize={6} index={0} />
-  <RangeSliderThumb boxSize={6} index={1} />
-</RangeSlider>
+
+            <RangeSlider
+              onChange={rangeSlider}
+              defaultValue={[minPrice, maxPrice]}
+              min={0}
+              max={800}
+              step={30}
+            >
+              <RangeSliderTrack bg="blue.100">
+                <RangeSliderFilledTrack bg="blue" />
+              </RangeSliderTrack>
+              <RangeSliderThumb boxSize={6} index={0} />
+              <RangeSliderThumb boxSize={6} index={1} />
+            </RangeSlider>
             <div style={{ marginTop: "20px" }}>
               <h4 style={{ fontSize: "15px" }}>Guest rating</h4>
               <div style={{ display: "flex", gap: "10px" }}>
-                <RadioGroup onChange={setValue} value={value}>
+                <RadioGroup>
                   <Stack direction="column">
                     <Radio value="1">any</Radio>
                     <Radio value="2">wonderful 9+</Radio>
@@ -175,43 +208,28 @@ const [compareproperties,setcompareproperties]=React.useState(false)
             <div style={{ marginTop: "20px" }}>
               <h4 style={{ fontSize: "15px" }}>Star rating</h4>
               <div style={{ display: "flex", gap: "10px", width: "15rem" }}>
-                <button
-                className="starButtonStyle"
-                  
-                >
+                <button className="starButtonStyle" onClick={() => stardata(1)}>
                   {/* <Icon name="star" size="24px" /> */}
                   <h1>1</h1>
                   <StarIcon />
                 </button>
-                <button
-                 className="starButtonStyle"
-                 
-                >
+                <button className="starButtonStyle" onClick={() => stardata(2)}>
                   {/* <Icon name="star" size="24px" /> */}
                   <h1>2</h1>
                   <StarIcon />
                 </button>
-                <button
-                 className="starButtonStyle"
-                 
-                >
+                <button className="starButtonStyle" onClick={() => stardata(3)}>
                   {/* <Icon name="star" size="24px" /> */}
                   <h1>3</h1>
                   <StarIcon />
                 </button>
-                <button
-                 className="starButtonStyle"
-                
-                >
+                <button className="starButtonStyle" onClick={() => stardata(4)}>
                   {/* <Icon name="star" size="24px" /> */}
                   <h1>4</h1>
                   <StarIcon />
                 </button>
                 <br />
-                <button
-                 className="starButtonStyle"
-                  
-                >
+                <button className="starButtonStyle" onClick={() => stardata(5)}>
                   {/* <Icon name="star" size="24px" /> */}
                   <h1>5</h1>
                   <StarIcon />
@@ -249,7 +267,7 @@ const [compareproperties,setcompareproperties]=React.useState(false)
             <div style={{ marginTop: "20px" }}>
               <h4 style={{ fontSize: "15px" }}> Stay Options</h4>
               <div style={{ display: "flex", gap: "10px" }}>
-                <RadioGroup onChange={setValue} value={value}>
+                <RadioGroup>
                   <Stack direction="column">
                     <Radio value="1">Any</Radio>
                     <Radio value="2">Hotels,resorts and more</Radio>
@@ -261,10 +279,14 @@ const [compareproperties,setcompareproperties]=React.useState(false)
             <div style={{ marginTop: "20px" }}>
               <h4 style={{ fontSize: "15px" }}>Property type</h4>
               <div style={{ display: "flex", gap: "10px" }}>
-                <RadioGroup onChange={setValue} value={value}>
+                <RadioGroup>
                   <Stack direction="column">
-                    <Radio value="1">Hotel</Radio>
-                    <Radio value="2">Resort</Radio>
+                    <Radio onClick={() => propertyHandle("hotel")} value="1">
+                      Hotel
+                    </Radio>
+                    <Radio onClick={() => propertyHandle("resort")} value="2">
+                      Resort
+                    </Radio>
                   </Stack>
                 </RadioGroup>
               </div>
@@ -295,10 +317,7 @@ const [compareproperties,setcompareproperties]=React.useState(false)
             </div>
           </div>
         </div>
-        <div
-        className="topStyle"
-         
-        >
+        <div className="topStyle">
           <div className="topdiv">
             <FormControl>
               <FormLabel></FormLabel>
@@ -317,7 +336,7 @@ const [compareproperties,setcompareproperties]=React.useState(false)
             {data?.map((hotel) => {
               return (
                 <div
-                className="hotelCard"
+                  className="hotelCard"
                   style={{
                     border: "2px solid grey",
                     borderRadius: "20px",
@@ -334,7 +353,6 @@ const [compareproperties,setcompareproperties]=React.useState(false)
                       // marginLeft: "0px",
                     }}
                   >
-                   
                     <Box w="100%" p={4} color="white">
                       <Carousel infiniteLoop>
                         {hotel.image.map((slide) => {
@@ -351,9 +369,7 @@ const [compareproperties,setcompareproperties]=React.useState(false)
                     </Box>
                     {/* </div> */}
                   </div>
-                  <div
-                   
-                  >
+                  <div>
                     <div>
                       <h3 style={{ fontSize: "20px", fontWeight: "bolder" }}>
                         {hotel.name}
@@ -363,24 +379,14 @@ const [compareproperties,setcompareproperties]=React.useState(false)
                         {hotel.location.country}
                       </p>
                     </div>
-                    <div
-                    className="proPrDiv"
-                      
-                    >
+                    <div className="proPrDiv">
                       <div>
                         <div style={{ color: "green" }}>
                           <p>Fully refundable</p>
                           <p>Reserve now , pay later</p>
                         </div>
-                        <div
-                        className="prDiv"
-                         
-                        >
-                          <div
-                          className="hotelRating"
-                          >
-                            {hotel.rating}
-                          </div>
+                        <div className="prDiv">
+                          <div className="hotelRating">{hotel.rating}</div>
                           <div>
                             <p style={{ fontSize: "15px" }}>{hotel.view}</p>
                             <p style={{ fontSize: "12px" }}>{hotel.reviews}</p>
@@ -388,22 +394,21 @@ const [compareproperties,setcompareproperties]=React.useState(false)
                         </div>
                       </div>
 
-                      <div
-                      className="hotelPrice"
-                      >
+                      <div className="hotelPrice">
                         <p>${hotel.price}</p>
                         <p> includes taxes and fees</p>
-                        {compareproperties&&<CheckboxGroup>
-                          <Checkbox>compare</Checkbox>
-                        </CheckboxGroup>}
-                        
+                        {compareproperties && (
+                          <CheckboxGroup>
+                            <Checkbox>compare</Checkbox>
+                          </CheckboxGroup>
+                        )}
                       </div>
                     </div>
                   </div>
                 </div>
               );
             })}
-            ;
+            
           </div>
         </div>
       </div>
