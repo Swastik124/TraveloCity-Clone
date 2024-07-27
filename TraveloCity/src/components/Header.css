@@ -22,17 +22,29 @@
     gap: 7px;
     margin-right: 10%;
 }
-
-.sub-header2> #Get-the-App{
-    padding: 2.5% 0%;
-    width: 30%;
-    background-color: rgb(250, 250, 250);
-    color: black;
-    border: 1px solid black;
-}
 .sub-header1 > img{
     height: 60px;
 }
 .sub-header2 > Button{
     height: 25px;
 }
+
+#Shoptravel{
+    height: 15rem; 
+    background-color: #0b428b;
+    color: white;
+}
+#BB:hover{
+    background-color: #0b428b;
+}
+#Shoptravel:hover{
+    background-color:#0b428b;
+}
+.sub-header2> #GettheApp{
+    padding: 3% 0%;
+    width: 30%;
+    background-color: rgb(250, 250, 250);
+    color: black;
+    border: 1px solid black;
+}
+

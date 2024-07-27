@@ -115,6 +115,7 @@
       "price": 350.0,
       "currency": "USD",
       "reviews": "100 reviews"
+    },
     {
       "id": 4,
       "name": "Tropical Oasis Resort",
@@ -192,4 +193,5 @@
       "currency": "EUR",
       "reviews":"66 reviews"
     }
+  ]
 }
