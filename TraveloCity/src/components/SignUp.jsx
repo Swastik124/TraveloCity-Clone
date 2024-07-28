@@ -20,8 +20,24 @@ export const SignUp = () => {
         e.preventDefault();
         if(ValidityState()){
             console.log('Form Submitted');
+            const userData = {
+              email: userEmail,
+              firstName: userFirstName,
+              lastName: userLastName,
+              password: userpassword,
+              keepSignedIn: keepSignedIn,
+            };
           
-            fetch("http://localhost:3000/userData/").then((res)=>{
+            fetch("http://localhost:3000/userData/",{
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+            },
+          body: JSON.stringify(userData),
+          })
+            
+            
+            .then((res)=>{
                 return res.json();
             }).then((resp)=>{
                 console.log(resp);
