@@ -3,7 +3,7 @@ import { Route,Routes,Link} from 'react-router-dom';
 import Home from "./components/Home"
  import SignUp from './components/SignUp'
 import SignIn from './components/SignIn';
-import DestinationDetails from './components/DestinationDetails'
+import DestinationDetails from './components/DestinationDetails/DestinationDetails'
 // import SignIn from './components/SignIn';
 // import SignUp from './components/SignUp';
 // import Navbar from './components/Navbar'

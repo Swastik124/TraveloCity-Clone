@@ -61,7 +61,7 @@
 
       "location": {
         "city": "London",
-        "state": null,
+        "state": "England",
         "country": "UK"
       },
       "rating": 4.2,
