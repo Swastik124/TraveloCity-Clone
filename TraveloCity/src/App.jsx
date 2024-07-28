@@ -4,6 +4,7 @@ import React from 'react'
 // import Header from './components/Header'
 // import Footer from './components/Footer';
 import Navbar from './components/Navbar'
+
 function App() {
 
   return (
@@ -12,7 +13,6 @@ function App() {
     <div className="Navbar"><Navbar></Navbar></div>
     {/* <div className="Footer"><Footer></Footer></div> */}
     {/* <DestinationDetails/> */}
-    
   </div>
   )
 }

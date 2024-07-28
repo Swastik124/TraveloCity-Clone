@@ -101,9 +101,7 @@
         "country": "USA"
       },
       "rating": 4.8,
-
-      "view":"excellent",
-
+      "view": "excellent",
       "amenities": [
         "Ski-in/ski-out access",
         "Hot tub",
@@ -141,8 +139,7 @@
         "country": "Mexico"
       },
       "rating": 4.9,
-      "view":"excellent",
-
+      "view": "excellent",
       "amenities": [
         "Private beach",
         "Swimming pool",
@@ -154,9 +151,8 @@
 
       "price": 400.0,
       "currency": "USD",
-      "reviews":"45 reviews"
-        },
-
+      "reviews": "45 reviews"
+    },
     {
       "id": 5,
       "name": "Historic City Center Hotel",
@@ -180,8 +176,8 @@
         "state": "naples",
         "country": "Italy"
       },
-      "rating": 4.6,
-      "view":"excellent",
+      "rating": 3.6,
+      "view": "excellent",
       "amenities": [
         "Free Wi-Fi",
         "Breakfast included",
@@ -191,7 +187,185 @@
       ],
       "price": 180.0,
       "currency": "EUR",
-      "reviews":"66 reviews"
+      "reviews": "66 reviews"
+    },
+    {
+      "id": 6,
+      "name": "Hotel Luxuria",
+      "description": "Charming hotel located in the heart of the historic city center",
+      "image": [
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/b96af669.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        },
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/c9f55d81.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        },
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/b5739b5d.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        },
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/05800c1a.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        }
+      ],
+      "location": {
+        "city": "Paris",
+        "state": "Paris",
+        "country": "France"
+      },
+
+      "rating": 4.8,
+      "view": "excellent",
+      "amenities": [
+        "Free Wi-Fi",
+        "Breakfast included",
+        "Laundry service",
+        "Business center",
+        "Restaurant"
+      ],
+      "price": 350,
+      "currency": "EUR",
+      "reviews": "86 reviews"
+    },
+    {
+      "id": 7,
+      "name": "The Grand Oasis",
+      "description": "Charming hotel located in the heart of the historic city center",
+      "image": [
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/b96af669.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        },
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/c9f55d81.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        },
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/b5739b5d.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        },
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/05800c1a.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        }
+      ],
+      "location": {
+        "city": "Cancun",
+        "state": "Quintana Roo",
+        "country": "Mexico"
+      },
+      "rating": 4.9,
+      "view": "excellent",
+      "amenities": [
+        "Free Wi-Fi",
+        "Breakfast included",
+        "Laundry service",
+        "Business center",
+        "Restaurant"
+      ],
+      "price": 600,
+      "currency": "EUR",
+      "reviews": "76 reviews"
+    },
+    {
+      "id": 8,
+      "name": "Urban Retreat",
+      "description": "Luxurious beachfront resort with stunning ocean views",
+      "image": [
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/b96af669.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        },
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/c9f55d81.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        },
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/b5739b5d.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        },
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/05800c1a.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        }
+      ],
+      "location": {
+        "city": "New York",
+        "state": "New York",
+        "country": "USA"
+      },
+      "rating": 4.6,
+      "view": "excellent",
+      "amenities": [
+        "Free Wi-Fi",
+        "Breakfast included",
+        "Laundry service",
+        "Business center"
+      ],
+      "price": 120.0,
+      "currency": "GBP",
+      "reviews": "45 reviews"
+    },
+    {
+      "id": 9,
+      "name": "Serene Stay",
+      "description": "Luxurious resort surrounded by lush tropical gardens and a private beach",
+      "image": [
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/b96af669.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        },
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/c9f55d81.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        },
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/b5739b5d.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        },
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/05800c1a.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        }
+      ],
+      "location": {
+        "city": "New York",
+        "state": "New York",
+        "country": "USA"
+      },
+      "rating": 4.7,
+      "view": "excellent",
+      "amenities": [
+        "Free Wi-Fi",
+        "Breakfast included",
+        "Laundry service",
+        "Business center"
+      ],
+      "price": 120.0,
+      "currency": "GBP",
+      "reviews": "45 reviews"
+    },
+    {
+      "id": 10,
+      "name": "Beachfront Bliss",
+      "description": "Luxurious beachfront resort with stunning ocean views",
+      "image": [
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/b96af669.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        },
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/c9f55d81.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        },
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/b5739b5d.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        },
+        {
+          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/05800c1a.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+        }
+      ],
+      "location": {
+        "city": "New York",
+        "state": "New York",
+        "country": "USA"
+      },
+      "rating": 4.8,
+      "view": "excellent",
+      "amenities": [
+        "Free Wi-Fi",
+        "Breakfast included",
+        "Laundry service",
+        "Business center"
+      ],
+      "price": 120.0,
+      "currency": "GBP",
+      "reviews": "45 reviews"
     }
   ]
 }

@@ -38,18 +38,15 @@
   /* padding: var(--chakra-space-0); */
   padding: 0px !important;
 }
-.mapStyle {
-  border: 1px solid grey;
-  border-radius: 20px;
-  text-align: center;
-  width: 100%;
-  /* // height: "60px"; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 2px;
-}
+  .mapStyle{
+    border: 2px solid;
+    border-radius: 20px;
+    height: 7% !important;
+    width: 55%;
+  }
+  .viewmap{
+    margin-left: 30%;
+  }
 .mapImage {
   border-radius: 20px;
   border-bottom-right-radius: 0px;
