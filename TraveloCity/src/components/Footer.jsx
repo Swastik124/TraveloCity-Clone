@@ -11,7 +11,7 @@ const Footer = () => {
     <div className='epedia'>
         <div>
             <Button onClick={epediagroup}>
-                <Image objectFit='cover' src={Epedialogo} alt='Dan Abramov' _hover="cursor='grab'" id='ep'/>
+                <Image objectFit='cover' src={Epedialogo} alt='Dan Abramov' /*_hover={"cursor='grab'"}*/ id='ep'/>
             </Button>
         </div>
          <br />
