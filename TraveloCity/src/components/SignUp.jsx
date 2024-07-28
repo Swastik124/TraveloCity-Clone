@@ -20,10 +20,12 @@ export const SignUp = () => {
         e.preventDefault();
         if(ValidityState()){
             console.log('Form Submitted');
+          
             fetch("http://localhost:3000/userData/").then((res)=>{
                 return res.json();
             }).then((resp)=>{
                 console.log(resp);
+                
             }).catch((err)=>{
                 console.log(err);
             })
