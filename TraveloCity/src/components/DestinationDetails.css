@@ -1,0 +1,123 @@
+.topdiv {
+  /* border: 2px solid black; */
+  margin: 5px;
+  width: 400px !important;
+}
+.sidebar {
+  /* display: flex; */
+  /* gap: 2; */
+  /* border: 2px solid red; */
+  margin-top: 3px;
+  margin-left: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-right: 2px; */
+  width: 400px !important;
+}
+.pricediv {
+  display: flex;
+  gap: 10px;
+}
+.css-1t1xvy7 {
+  width: 53%;
+  margin-top: 25px;
+}
+.slider-container {
+  width: 20px;
+  height: 20px;
+  display: flex;
+}
+
+.carousel .thumbs-wrapper {
+  margin: 0px !important;
+  /* overflow: hidden; */
+}
+
+.css-9n7q4a {
+  /* padding: var(--chakra-space-0); */
+  padding: 0px !important;
+}
+  .mapStyle{
+    border: 2px solid;
+    border-radius: 20px;
+    height: 7% !important;
+    width: 55%;
+  }
+  .viewmap{
+    margin-left: 30%;
+  }
+.mapImage {
+  border-radius: 20px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.compareStyle {
+  border: 1px solid grey;
+  width: 55%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.searchStyle {
+  border: 2px solid grey;
+  display: flex;
+  width: 100%;
+  height: 45px;
+  align-items: center;
+  gap: 40px;
+  border-radius: 20px;
+}
+.starButtonStyle {
+  border: 2px solid grey;
+  display: flex;
+  width: 5rem;
+  height: 45px;
+  align-items: center;
+  gap: 6px;
+  border-radius: 10px;
+  justify-content: center;
+}
+.topStyle {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.hotelPrice {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.hotelRating {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prDiv {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.proPrDiv{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 70px;
+}
+.hotelCard{
+    border: 2px solid grey;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
