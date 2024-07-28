@@ -8,6 +8,9 @@ const Wrapper = Box`
   width: 75%;
   margin: 40px auto;
   padding: 15px;
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
 `;
 
 export const FinalSubmit = () => {
