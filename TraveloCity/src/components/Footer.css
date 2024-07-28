@@ -1,0 +1,29 @@
+/* .epedia{
+   
+} */
+ul{
+    padding-bottom: 5% ;
+    color: blue;
+}
+a{
+    
+    margin-bottom: 7000%;
+    color: rgb(202, 65, 6);
+    font-size: small;
+    color: blue;
+}
+p{
+    text-align: center;
+    font-size: small;
+}
+a:hover{
+    text-decoration: underline;
+}
+.contents{
+    display: flex;
+    justify-content: space-around;
+    
+}
+#ep{
+    margin-left: 135%;
+}
