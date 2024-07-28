@@ -25,7 +25,7 @@ export const SignIn = () => {
                     );
                     window.location.href="/SignIn";
                 } else {
-                    let x=resp;
+                    
                     console.log(x);
                     for (let i=0;i<x.length;i++)
                     {

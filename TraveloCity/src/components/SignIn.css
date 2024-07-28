@@ -1,4 +1,4 @@
-
+@import 'https://unpkg.com/normalize.css';
 #sighInHead{
     /* position: static; */
     top: 0;
@@ -49,9 +49,9 @@ p{
  
   }
   
-  .signInContainer label {
+  /* .signInContainer label {
     margin-bottom: 9px;
-  }
+  } */
   
   .signInContainer input[type="text"], .signInContainer input[type="password"] {
     width:23rem;
@@ -108,3 +108,19 @@ hr{
     width: 25rem;
 }
 
+.icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0rem;
+}
+
+#fb{
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0;
+}
+#apple{
+  height: 2.5rem;
+  width: 2.5rem;
+}
