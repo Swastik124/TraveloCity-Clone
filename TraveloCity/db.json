@@ -45,7 +45,8 @@
 
       "image": [
         {
-          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/b96af669.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+
+          "image": "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=600"
         },
         {
           "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/c9f55d81.jpg?impolicy=resizecrop&rw=1200&ra=fit"
@@ -83,7 +84,8 @@
       "description": "Cozy mountain lodge with breathtaking views of the surrounding peaks",
       "image": [
         {
-          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/b96af669.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+
+          "image": "https://images.pexels.com/photos/16437593/pexels-photo-16437593/free-photo-of-hotel-villa-de-adeje-beach-on-tenerifa-spain.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
         },
         {
           "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/c9f55d81.jpg?impolicy=resizecrop&rw=1200&ra=fit"
@@ -121,7 +123,8 @@
 
       "image": [
         {
-          "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/b96af669.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+
+          "image": "https://images.pexels.com/photos/14024047/pexels-photo-14024047.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
         },
         {
           "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/c9f55d81.jpg?impolicy=resizecrop&rw=1200&ra=fit"
@@ -284,6 +287,7 @@
         "city": "New York",
         "state": "New York",
         "country": "USA"
+
       },
       "rating": 4.6,
       "view": "excellent",
@@ -367,5 +371,138 @@
       "currency": "GBP",
       "reviews": "45 reviews"
     }
+  ],
+  "userData": [
+    {
+      "userName": "Anindita Panigrahi",
+      "email": "anni@gmail.com",
+      "password": "changeme",
+      "id": "792b"
+    },
+    {
+      "userName": "Swastik Mohanty",
+      "email": "swastik@gmail.com",
+      "password": "changeme",
+      "id": "844b"
+    },
+    {
+      "userName": "Akanksha Pttnaik ",
+      "email": "akanksha@gmail.com",
+      "password": " changeme",
+      "id": "1a25"
+    },
+    {
+      "id": "814a",
+      "firstName": "Anindita",
+      "lastName": "Panigrahi",
+      "email": "ani@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "95c4",
+      "firstName": "Anindita",
+      "lastName": "Panigrahi",
+      "email": "ani@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "b729",
+      "firstName": "Anindita",
+      "lastName": "Panigrahi",
+      "email": "ani@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "b125",
+      "firstName": "Anindita",
+      "lastName": "Panigrahi",
+      "email": "ani@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "182c",
+      "firstName": "Anindita",
+      "lastName": "Panigrahi",
+      "email": "ani@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "60fe",
+      "firstName": "Anindita",
+      "lastName": "Panigrahi",
+      "email": "ani@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "1f0c",
+      "firstName": "Anindita",
+      "lastName": "Panigrahi",
+      "email": "ani@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "0c0b",
+      "firstName": "Anindita",
+      "lastName": "Panigrahi",
+      "email": "ani@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "c786",
+      "firstName": "Anindita",
+      "lastName": "Panigrahi",
+      "email": "ani@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "cdc2",
+      "firstName": "Anindita",
+      "lastName": "Panigrahi",
+      "email": "ani@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "c30e",
+      "firstName": "Anindita",
+      "lastName": "Panigrahi",
+      "email": "ani@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "9f91",
+      "firstName": "Anindita",
+      "lastName": "Panigrahi",
+      "email": "ani@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "b2c4",
+      "firstName": "Anindita",
+      "lastName": "Panigrahi",
+      "email": "ani@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "7e97",
+      "firstName": "Anindita",
+      "lastName": "Panigrahi",
+      "email": "ani@gmail.com",
+      "password": "1234abc"
+    },
+    {
+      "id": "25b4",
+      "firstName": "Anindita",
+      "lastName": "Panigrahi",
+      "email": "ani@gmail.com",
+      "password": "1234abc"
+    },
+    {
+      "id": "b869",
+      "firstName": "Anindita",
+      "lastName": "Panigrahi",
+      "email": "ani@gmail.com",
+      "password": "ap23"
+    }
   ]
 }
+

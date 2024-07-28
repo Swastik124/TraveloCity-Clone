@@ -1,0 +1,14 @@
+
+.Headings{
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: #191e3b;
+    margin:1rem;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+
+}
+image{
+    display: flex;
+    align-items: center;
+}

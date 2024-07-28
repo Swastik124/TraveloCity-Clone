@@ -1,0 +1,126 @@
+@import 'https://unpkg.com/normalize.css';
+#sighInHead{
+    /* position: static; */
+    top: 0;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+.signInContainer {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-align: center;  
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+    font-weight: 400;
+    
+  }
+.signInBody{
+    width: 80rem;
+    max-inline-size: 28rem;
+    text-align: center;
+    text-wrap: pretty;
+}
+p{
+    
+    line-height: 1.33333;
+    word-wrap: break-word;
+}
+#keepSignedInMessage{
+  font-size: 0.75em;  
+  word-wrap: break-word;
+}
+.signInContainer h1 {
+    padding: 15px 0px;
+    color: #162230;
+    text-align: left;
+  }
+  
+  .signInContainer form {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    text-align: left;
+ 
+  }
+  
+  /* .signInContainer label {
+    margin-bottom: 9px;
+  } */
+  
+  .signInContainer input[type="text"], .signInContainer input[type="password"] {
+    width:23rem;
+    height: 2rem;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: .5rem;
+    border: 1px solid #798799;
+  }
+  
+  .signInContainer button[type="submit"] {
+    background-color: #526984;
+    color: #fff;
+    padding: 10px 20px;
+    width: 5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .signInContainer button[type="submit"]:hover {
+    background-color:   #162230;
+  }
+  
+hr{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#headerLogo {
+  height: 1.875rem;
+  border: 0;
+  padding: .3rem;
+  
+}
+.prevBtn img{
+    height: 1.5rem;
+    border-radius: 3rem;
+    color: #526984;
+}
+.prevBtn{
+    margin-right: 80%;
+    padding: .3rem;
+    border: 0;
+    text-align: left;
+    border-radius: 3rem;
+    height: 2rem;
+    position: absolute;
+    left: 0.9rem;
+    background-color: transparent;
+}
+#submitBtn{
+    width: 25rem;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0rem;
+}
+
+#fb{
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0;
+}
+#apple{
+  height: 2.5rem;
+  width: 2.5rem;
+}

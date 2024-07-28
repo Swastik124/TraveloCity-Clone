@@ -1,4 +1,6 @@
 import React from 'react'
+import Home from "./components/Home"
+//  import SignUp from './components/SignUp'
 // import SignIn from './components/SignIn';
 // import DestinationDetails from './components/DestinationDetails'
 // import Header from './components/Header'
@@ -6,7 +8,6 @@ import React from 'react'
 import Navbar from './components/Navbar'
 
 function App() {
-  // 2. Wrap ChakraProvider at the root of your app
   return (
         <div>
           {/* <div className="Header"><Header></Header></div> */}
@@ -19,6 +20,7 @@ function App() {
             <PriceDetail/>*/}
           </div>
         )
+
 }
 export default App;
 
