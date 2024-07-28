@@ -9,6 +9,14 @@ const Wrapper = Flex`
   width: 80%;
   margin: auto;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 `;
 
 export const Payment = () => {
