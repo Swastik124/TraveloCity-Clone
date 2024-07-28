@@ -11,6 +11,9 @@ import {
   SimpleGrid,
   CardHeader,
 } from '@chakra-ui/react';
+import Header from './Header'
+import Navbar from './Navbar'
+import Footer from './Footer';
 
 
 const responsive = {
@@ -47,6 +50,8 @@ function Home() {
 
   return (
     <>
+    <div><Header></Header></div>
+    <div><Navbar></Navbar></div>
       <div className='mainBody'>
         <h2 style={{
           fontSize: ' 1.75rem',
@@ -215,9 +220,8 @@ function Home() {
             </button>
           </div>
         </div>
-
-
       </div>
+      <div><Footer></Footer></div>
     </>
   );
 }

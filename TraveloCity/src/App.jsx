@@ -1,24 +1,28 @@
 import React from 'react'
+import { Route,Routes,Link} from 'react-router-dom';
 import Home from "./components/Home"
-//  import SignUp from './components/SignUp'
+ import SignUp from './components/SignUp'
+import SignIn from './components/SignIn';
+import DestinationDetails from './components/DestinationDetails'
 // import SignIn from './components/SignIn';
-// import DestinationDetails from './components/DestinationDetails'
-// import Header from './components/Header'
-// import Footer from './components/Footer';
-import Navbar from './components/Navbar'
+// import SignUp from './components/SignUp';
+// import Navbar from './components/Navbar'
 
 function App() {
   return (
         <div>
-          {/* <div className="Header"><Header></Header></div> */}
-           <div className="Navbar"><Navbar></Navbar></div>
-          {/* <div className="Footer"><Footer></Footer></div> */}
-          {/* <DestinationDetails/> */}
-          {/*<FinalSubmit/>
-            <Payment/>
-            <PaymentForm/>
-            <PriceDetail/>*/}
-          </div>
+            <Routes>
+              <Route path="/" element={<Home/>} />
+              <Route path="/Home" element={<Home/>} />
+              <Route path="/SignUp" element={<SignUp />} />
+              <Route path="/SignIn" element={<SignIn />} />
+              <Route path="/DestinationDetails" element={<DestinationDetails />} />
+              {/* <Route path="/Header" element={<Header />} />
+              <Route path="/Footer" element={<Footer />} /> */}
+              {/* <Route path="/Navbar" element={<Navbar />} /> */}
+            </Routes>
+          
+        </div>
         )
 
 }

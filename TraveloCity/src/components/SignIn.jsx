@@ -120,7 +120,7 @@ export const SignIn = () => {
             </form>
             
           </div><br/>
-          <p>Already have an account <a href='SignIn'style={{color:'blue', textDecoration:'underline'}}>Sign In</a></p><br/>
+          <p>Don't have an Account ?<a href='SignUp'style={{color:'blue', textDecoration:'underline'}}>Sign Up</a></p><br/>
           <div className='icon' style={{display:'flex' ,alignItems:'center'}}>
             <img  id='apple' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA5r0_FrSjm2OgttQLwh_CnVCnzbJ7dLv6oA&s'/>
             <img id='fb' src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3XyB5KnLk2ALgsLWUwpbVDuI6WOrmsdu9leOapY3J1YE8YJzd'/>

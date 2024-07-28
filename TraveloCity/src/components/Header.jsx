@@ -4,8 +4,12 @@ import {Menu,MenuButton,MenuItem,MenuList,Button} from '@chakra-ui/react'
 import { Popover, PopoverTrigger, PopoverContent,Portal,PopoverArrow,PopoverHeader,PopoverBody } from '@chakra-ui/react'
 import {  MdFileDownload } from 'react-icons/md'
 import {ChevronDownIcon} from '@chakra-ui/icons'
-// import SignIn from './SignIn'
-
+import ReactDOM from 'react-dom';
+// import NextLink from 'next/link'
+// import { Link } from '@chakra-ui/react'
+// import { useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom'
+import SignIn from './SignIn'
 
 const Header = () =>{
   function Listyourproperty(){
@@ -20,9 +24,9 @@ const Header = () =>{
   function Trips(){
     window.location.href = "https://www.travelocity.com/trips"
   }
-  // function Signin(){
-    // window.location.href = "./SignIn.jsx"
-  // }
+  function signin(){
+    window.location.href = "/SignIn"
+  }
   return (
     <div className="Header">
         <div className='sub-header'>
@@ -51,10 +55,8 @@ const Header = () =>{
           <Button onClick={Listyourproperty} id='BB'  backgroundColor={'#0b428b'} color={'white'} alignSelf={'center'}>List your property</Button>
           <Button onClick={Support} id='BB' backgroundColor='#0b428b' color={'white'} alignSelf={'center'}>Support</Button>
           <Button onClick={Trips} backgroundColor={'#0b428b'} color={'white'} id='BB' alignSelf={'center'}>Trips</Button>
-          <Popover><PopoverTrigger><Button backgroundColor={'#0b428b'} color={'white'} _hover={"backgroundColor='#0b428b'"} alignSelf={'center'}>Sign in</Button></PopoverTrigger><Portal><PopoverContent><PopoverArrow /><PopoverHeader >Members can access discounts and special features</PopoverHeader><PopoverBody>
-          <Button colorScheme={'blue'} width={'100%'} backgroundColor={'#0b4fa2'} alignSelf={'center'} borderRadius={'5rem'} /*onClick={Signin}*/>Signin</Button></PopoverBody></PopoverContent></Portal></Popover>
-          
-          
+          <Popover><PopoverTrigger><Button backgroundColor={'#0b428b'} color={'white'} _hover={"backgroundColor='#0b428b'"} alignSelf={'center'} >Sign in</Button></PopoverTrigger><Portal><PopoverContent><PopoverArrow /><PopoverHeader >Members can access discounts and special features</PopoverHeader><PopoverBody>
+          <Button colorScheme={'blue'} width={'100%'} backgroundColor={'#0b4fa2'} alignSelf={'center'} borderRadius={'5rem'} onClick={signin}>SignIn</Button></PopoverBody></PopoverContent></Portal></Popover>
           </div>
         </div>
     </div>
