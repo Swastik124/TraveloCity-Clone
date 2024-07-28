@@ -45,6 +45,7 @@
 
       "image": [
         {
+
           "image": "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=600"
         },
         {
@@ -83,6 +84,7 @@
       "description": "Cozy mountain lodge with breathtaking views of the surrounding peaks",
       "image": [
         {
+
           "image": "https://images.pexels.com/photos/16437593/pexels-photo-16437593/free-photo-of-hotel-villa-de-adeje-beach-on-tenerifa-spain.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
         },
         {
@@ -121,6 +123,7 @@
 
       "image": [
         {
+
           "image": "https://images.pexels.com/photos/14024047/pexels-photo-14024047.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
         },
         {
@@ -284,6 +287,7 @@
         "city": "New York",
         "state": "New York",
         "country": "USA"
+
       },
       "rating": 4.6,
       "view": "excellent",
@@ -501,3 +505,4 @@
     }
   ]
 }
+
