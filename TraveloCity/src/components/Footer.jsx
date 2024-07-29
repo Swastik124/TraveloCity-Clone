@@ -53,7 +53,7 @@ const Footer = () => {
             </div>
         </div>
         <br />
-        <p>© 2024 Travelscape LLC, an Expedia Group company. All rights reserved. Travelocity, the Stars Design, and The Roaming Gnome Design are trademarks or registered trademarks of Travelscape LLC. CST# 2083930-50.</p>
+        <p>© 2024 Travelscape LLC, an Expedia Group company. All rights reserved. Travelocity, the Stars Design, and The Roaming Gnome Design are trademarks or registered trademarks of Travelscape LLC. CST# 2083930-50.</p><br /><br />
     </div>
   )
 }
