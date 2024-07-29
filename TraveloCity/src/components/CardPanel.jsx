@@ -3,7 +3,7 @@ import React from 'react'
 import { Carousel } from 'react-responsive-carousel';
 // import { Payment } from './Payment';
 
-function CardPanel({data,compareproperties}) {
+function CardPanel({data,compareproperties,sortBar}) {
     // function reserve(){
     //     window.location.href='/Payment';
     // }
@@ -11,14 +11,13 @@ function CardPanel({data,compareproperties}) {
     <div className="topStyle">
           <div className="topdiv">
             <FormControl>
-              <FormLabel></FormLabel>
-              <Select placeholder="Sort by">
-                <option>recommended</option>
-                <option>price:low to high</option>
-                <option>price:high to low</option>
-                <option>distance from downtown</option>
-                <option>guest rating + our picks</option>
-                <option>star rating</option>
+              <FormLabel>Sort by</FormLabel>
+               <Select
+            onChange={(e) => sortBar(e.target.value)}
+          >
+            <option value="price:low to high">price:low to high</option>
+            <option value="price:high to low">price:high to low</option>
+            <option value="star rating">star rating</option>
               </Select>
             </FormControl>
           </div>
@@ -95,7 +94,7 @@ function CardPanel({data,compareproperties}) {
                         )}
                       </div>
                       <div className='bookst'>
-                        <button /*onClick={reserve}*/>Reserve</button>
+                        <button /*onClick={reserve}*/ style={{marginTop : "5px"}}>Reserve</button>
                       </div>
                       </div>
                     </div>
