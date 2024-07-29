@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Header.css'
-import {Menu,MenuButton,MenuItem,MenuList,Button} from '@chakra-ui/react'
+import {Menu,MenuButton,MenuItem,MenuList,Button,MenuIcon,MenuGroup,MenuDivider} from '@chakra-ui/react'
 import { Popover, PopoverTrigger, PopoverContent,Portal,PopoverArrow,PopoverHeader,PopoverBody } from '@chakra-ui/react'
 import {  MdFileDownload } from 'react-icons/md'
 import {ChevronDownIcon} from '@chakra-ui/icons'
@@ -8,8 +8,12 @@ import ReactDOM from 'react-dom';
 // import NextLink from 'next/link'
 // import { Link } from '@chakra-ui/react'
 // import { useHistory } from 'react-router-dom';
-import { Link } from 'react-router-dom'
-import SignIn from './SignIn'
+import { BsBuildingsFill,BsFillLuggageFill } from "react-icons/bs";
+import { FaPlane,FaTicketAlt,FaUserTie } from "react-icons/fa";
+import { IoCarSharp } from "react-icons/io5";
+
+// import { Link } from 'react-router-dom'
+// import SignIn from './SignIn'
 
 const Header = () =>{
   function Listyourproperty(){
@@ -34,29 +38,61 @@ const Header = () =>{
             <img src=".\src\assets\logo.png" alt="" className="logo" />
             <Menu>
               <MenuButton as={Button} rightIcon={<ChevronDownIcon />} backgroundColor={'#0b428b'} color={'white'} _hover={"backgroundColor='#0b428b'"}>Shop travel</MenuButton>
-                <MenuList>
-                  <MenuItem as={'a'} href='#'><b>Stays</b></MenuItem>
-                  <MenuItem as={'a'} href='#'><b>Flights</b></MenuItem>
-                  <MenuItem as={'a'} href='#'><b>Cars</b></MenuItem>
-                  <MenuItem as={'a'} href='#'><b>Packages</b></MenuItem>
-                  <MenuItem as={'a'} href='#'><b>Things to do</b></MenuItem>
-                  <MenuItem as={'a'} href='#'><b>Cruises</b></MenuItem><br />
-                  <MenuItem as={'a'} href='#'>Trips for Me</MenuItem>
-                  <MenuItem as={'a'} href='#'>Discover</MenuItem>
-                  <MenuItem as={'a'} href='#'>Travel Deals</MenuItem>
-                  <MenuItem as={'a'} href='#'>Get Inspired</MenuItem>
-                  <MenuItem as={'a'} href='#'>Groups and meetings</MenuItem>
+                  <MenuList>
+                    <MenuGroup className='Menulist'>
+                    <ul>
+                      <a href="#">
+                        <BsBuildingsFill />
+                        <span style={{ marginLeft: '10%' }}>Stays</span>
+                      </a>
+                    </ul>
+                    <ul>
+                      <a href="#">
+                        <FaPlane />
+                        <span style={{ marginLeft: '10%' }}>Flights</span>
+                      </a>
+                    </ul>
+                    <ul>
+                      <a href="#">
+                        <IoCarSharp />
+                        <span style={{ marginLeft: '10%' }}>Cars</span>
+                      </a>
+                    </ul>
+                    <ul>
+                      <a href="#">
+                        <BsFillLuggageFill />
+                        <span style={{ marginLeft: '10%' }}>Packages</span>
+                      </a>
+                    </ul>
+                    <ul>
+                      <a href="#">
+                        <FaTicketAlt />
+                        <span style={{ marginLeft: '10%' }}>Things to do</span>
+                      </a>
+                    </ul>
+                    <ul>
+                      <a href="#">
+                        <FaUserTie />
+                        <span style={{ marginLeft: '10%' }}>Cruises</span>
+                      </a>
+                    </ul>
+                    <MenuDivider/>
+                    <ul style={{marginLeft:'5%'}}><a href="/">Trips for Me</a></ul>
+                    <ul style={{marginLeft:'5%'}}><a href="/">Discover</a></ul>
+                    <ul style={{marginLeft:'5%'}}><a href="/">Travel Deals</a></ul>
+                    <ul style={{marginLeft:'5%'}}><a href="/">Get Inspired</a></ul>
+                    <ul style={{marginLeft:'5%'}}><a href="/">Groups & meetings</a></ul>
+                  </MenuGroup>
                 </MenuList>
             </Menu>
           </div>
           <div className="sub-header2">
-         
-          <Button colorScheme={'white'}  leftIcon={<MdFileDownload/>} variant='outline' alignSelf={'center'} id='GettheApp' onClick={DownloadtheApp} borderRadius={'5rem'}>Get the App</Button>
-          <Button onClick={Listyourproperty} id='BB'  backgroundColor={'#0b428b'} color={'white'} alignSelf={'center'}>List your property</Button>
-          <Button onClick={Support} id='BB' backgroundColor='#0b428b' color={'white'} alignSelf={'center'}>Support</Button>
-          <Button onClick={Trips} backgroundColor={'#0b428b'} color={'white'} id='BB' alignSelf={'center'}>Trips</Button>
-          <Popover><PopoverTrigger><Button backgroundColor={'#0b428b'} color={'white'} _hover={"backgroundColor='#0b428b'"} alignSelf={'center'} >Sign in</Button></PopoverTrigger><Portal><PopoverContent><PopoverArrow /><PopoverHeader >Members can access discounts and special features</PopoverHeader><PopoverBody>
-          <Button colorScheme={'blue'} width={'100%'} backgroundColor={'#0b4fa2'} alignSelf={'center'} borderRadius={'5rem'} onClick={signin}>SignIn</Button></PopoverBody></PopoverContent></Portal></Popover>
+            <Button colorScheme={'white'}  leftIcon={<MdFileDownload/>} variant='outline' alignSelf={'center'} id='GettheApp' onClick={DownloadtheApp} borderRadius={'5rem'}>Get the App</Button>
+            <Button onClick={Listyourproperty} id='BB'  backgroundColor={'#0b428b'} color={'white'} alignSelf={'center'}>List your property</Button>
+            <Button onClick={Support} id='BB' backgroundColor='#0b428b' color={'white'} alignSelf={'center'}>Support</Button>
+            <Button onClick={Trips} backgroundColor={'#0b428b'} color={'white'} id='BB' alignSelf={'center'}>Trips</Button>
+            <Popover><PopoverTrigger><Button backgroundColor={'#0b428b'} color={'white'} _hover={"backgroundColor='#0b428b'"} alignSelf={'center'} >Sign in</Button></PopoverTrigger><Portal><PopoverContent><PopoverArrow /><PopoverHeader >Members can access discounts and special features</PopoverHeader><PopoverBody>
+            <Button colorScheme={'blue'} width={'100%'} backgroundColor={'#0b4fa2'} alignSelf={'center'} borderRadius={'5rem'} onClick={signin}>SignIn</Button></PopoverBody></PopoverContent></Portal></Popover>
           </div>
         </div>
     </div>
