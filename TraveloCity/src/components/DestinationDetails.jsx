@@ -83,6 +83,24 @@ function DestinationDetails() {
       setData(filteredData);
     }
   };
+  const sortBar = (option) => {
+  let sortedData;
+  switch (option) {
+    case "price:low to high":
+      sortedData = [...dbdata.hotels].sort((a, b) => a.price - b.price);
+      break;
+    case "price:high to low":
+      sortedData = [...dbdata.hotels].sort((a, b) => b.price - a.price);
+      break;
+      case "star rating":
+        sortedData = [...dbdata.hotels].sort((a, b) => b.rating - a.rating);
+      break;
+    default:
+      sortedData = dbdata.hotels;
+      break;
+  }
+  setData(sortedData);
+};
 
   return (
     <>
@@ -105,6 +123,7 @@ function DestinationDetails() {
         <CardPanel 
         data={data} 
         compareproperties={compareproperties} 
+        sortBar={sortBar}
         />
       </div>
       <div><Footer></Footer></div>
