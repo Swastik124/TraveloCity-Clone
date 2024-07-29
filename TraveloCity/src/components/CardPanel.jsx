@@ -11,9 +11,8 @@ function CardPanel({data,compareproperties,sortBar}) {
     <div className="topStyle">
           <div className="topdiv">
             <FormControl>
-              <FormLabel></FormLabel>
+              <FormLabel>Sort by</FormLabel>
                <Select
-            placeholder="Sort by"
             onChange={(e) => sortBar(e.target.value)}
           >
             <option value="price:low to high">price:low to high</option>
