@@ -11,7 +11,8 @@ import {
   SimpleGrid,
   CardHeader,
 } from '@chakra-ui/react';
-
+import Help1 from '../assets/help1.png'
+import Help2 from '../assets/help2.png'
 import Header from './Header'
 import Navbar from './Navbar'
 import Footer from './Footer';
@@ -80,14 +81,14 @@ function Home() {
                   overflow: 'visible',
 
                 }}>
-                  <img src={hotel.image[0].image} alt={hotel.name} style={{
+                  <img onClick={detail} src={hotel.image[0].image} alt={hotel.name} style={{
                     width: '100%',
                     height: '8rem',
                     objectFit: 'cover',
                     
                   }} />
 
-                  <h3 style={{
+                  <h3 onClick={detail} style={{
                     fontSize: '1.2rem',
                     // fontWeight: 'bold',
                     margin: '0.5rem 0'
@@ -132,14 +133,14 @@ function Home() {
                   borderRadius:'5%',
                   overflow: 'visible',
                 }}>
-                  <img src={hotel.location.img} alt={hotel.location.city} style={{
+                  <img onClick={detail} src={hotel.location.img} alt={hotel.location.city} style={{
                     width: '100%',
                     height: '9rem',
                     objectFit: 'cover',
                    
                   }} />
 
-                  <h2 style={{
+                  <h2 onClick={detail} style={{
                     fontSize: '1.2rem',
                     margin: '0.5rem 0'
                   }}>{hotel.location.city}</h2>
@@ -281,6 +282,7 @@ function Home() {
                 fontWeight:'500',
                 
               }}> view details </button>
+              
           </div>
           </CardBody>
           </Card>
@@ -332,11 +334,10 @@ function Home() {
             </CardBody>
           </Card>
           </SimpleGrid>
-
-      </div>
-
-      
-      <div style={{marginBottom:'0', paddingBottom:'0'}}><Footer></Footer></div>
+      </div><br /><br />
+      <div style={{marginLeft:'6%'}}><img src={Help1} alt="Help1" /></div><br />
+      <div style={{marginLeft:'6%'}}><img src={Help2} alt="Help2" /></div><br />
+      <div ><Footer></Footer></div>
       
     </>
   );
