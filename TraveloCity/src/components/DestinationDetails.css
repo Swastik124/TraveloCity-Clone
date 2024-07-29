@@ -169,7 +169,7 @@
   }
   .placeSt {
     text-align: left;
-    font-size: 15px;
+    font-size: larger;
   }
   .refSt {
     text-align: left;
@@ -177,9 +177,10 @@
   }
   .lefta {
     text-align: left;
-    font-size: 15px;
+    font-size: larger;
   }
   .cardSt {
+
     width: 30%;
     margin-left: 0px;
     display: flex;
@@ -212,7 +213,7 @@
       max-width: 100%;
     }
     .mapStyle {
-      max-width: 70%;
+      /* max-width: 190%; */
       border: 2px solid grey;
     }
     .compareStyle {

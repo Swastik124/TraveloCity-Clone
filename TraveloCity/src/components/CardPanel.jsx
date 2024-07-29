@@ -42,7 +42,10 @@ function CardPanel({data,compareproperties,sortBar}) {
                   >
                     <Box
                      className='BoxSt'
-                      >
+                      marginLeft={'-30%'}
+                      width={'250%'}
+                      marginTop={'10%'}
+                      marginBottom={'0%'}>
                       <Carousel infiniteLoop>
                         {hotel.image.map((slide) => {
                           return (
@@ -57,7 +60,7 @@ function CardPanel({data,compareproperties,sortBar}) {
                   </div>
                   <div>
                     <div>
-                      <h3 style={{ fontSize: "20px", fontWeight: "bolder" }}>
+                      <h3 style={{ fontSize: "xx-large", fontWeight: "bolder",marginTop:'10%' }}>
                         {hotel.name}
                       </h3>
                       <p className='placeSt'>
@@ -76,7 +79,7 @@ function CardPanel({data,compareproperties,sortBar}) {
                           <p className='lefta'>Reserve now , pay later</p>
                         </div>
                         <div className="prDiv">
-                          <div className="hotelRating">{hotel.rating}</div>
+                          <div className="hotelRating" >{hotel.rating}</div>
                           <div>
                             <p style={{ fontSize: "15px" }}>{hotel.view}</p>
                             <p style={{ fontSize: "12px" }}>{hotel.reviews}</p>
@@ -84,17 +87,17 @@ function CardPanel({data,compareproperties,sortBar}) {
                         </div>
                       </div>
                         <div className='reserveprice'>
-                      <div className="hotelPrice">
-                        <p>${hotel.price}</p>
-                        <p> includes taxes and fees</p>
+                      <div className="hotelPrice" >
+                        <p style={{fontSize:'larger'}}>${hotel.price}</p>
+                        <p style={{fontSize:'medium',width:'100%'}}> includes taxes and fees</p>
                         {compareproperties && (
                           <CheckboxGroup>
                             <Checkbox>compare</Checkbox>
                           </CheckboxGroup>
                         )}
                       </div>
-                      <div className='bookst'>
-                        <button /*onClick={reserve}*/ style={{marginTop : "5px"}}>Reserve</button>
+                      <div className='bookst' style={{marginTop:'5%'}}>
+                        <button /*onClick={reserve}*/ style={{marginTop : "12%"}}>Reserve</button>
                       </div>
                       </div>
                     </div>

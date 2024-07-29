@@ -5,11 +5,11 @@ import React from 'react'
 function SidePanel({searchHotel,minPrice,priceChangeMin,maxPrice,priceChangeMax,rangeSlider,stardata,setcompareproperties,compareproperties,propertyHandle}) {
   return (
     <div className="sidebar">
-          <div className="mapStyle">
+          <div className="mapStyle" marginBottom='-10%'>
             <img
               src="https://maps.googleapis.com/maps/api/staticmap?&size=600x400&map_id=3b266eb50d2997c6&markers=icon:https%3A%2F%2Fa.travel-assets.com%2Ftravel-assets-manager%2Feg-maps%2Fproperty.png%7C21.62336%2C87.52161%7C21.62625%2C87.50127%7C21.62442%2C87.50417&channel=expedia-HotelInformation&maptype=roadmap&key=AIzaSyCYjQus5kCufOpSj932jFoR_AJiL9yiwOw&signature=66zdHVHlReVsXTMuRDTpLnGawSY="
               alt="area map"
-              height="70%"
+              style={{ maxWidth: "100%", height: "auto"}}
               className="mapImage"
             />
             <a

@@ -166,15 +166,15 @@ const Navbar = () => {
   // }
 
   return (
-    <div style={{ marginTop: "3rem" }} className="navbar">
-      <div className="navbar-container">
+    <div style={{ marginTop: "3rem"}} className="navbar">
+      <div className="navbar-container" >
         <Tabs
           onChange={(index) => setTabIndex(index)}
           position="relative"
           variant="unstyled"
           align="center"
         >
-          <TabList className="tab-list">
+          <TabList className="tab-list" border={'1px solid grey'} borderRadius={'1rem'}>
             <Tab>
               <b>Stays</b>
             </Tab>
@@ -207,7 +207,7 @@ const Navbar = () => {
             justifyContent={"center"}
             alignItems={"center"}
           >
-            <TabPanel align="start">
+            <TabPanel align="start" className="Stays"> 
               <div style={{ display: "flex" }}>
                 <InputGroup width={"23%"} marginLeft="3%">
                   <InputLeftElement pointerEvents="none">
@@ -392,7 +392,7 @@ const Navbar = () => {
                   backgroundColor={"blue"}
                   borderRadius={"2rem"}
                   marginLeft={"1rem"}
-                  _hover={{ backgroundColor: "blue", color: "white" }}
+                  _hover={{ backgroundColor: "#0b428b", color: "white" }}
                 >
                   Search
                 </Button>
@@ -704,7 +704,7 @@ const Navbar = () => {
                         backgroundColor={"blue"}
                         borderRadius={"2rem"}
                         marginLeft={"1rem"}
-                        _hover={{ backgroundColor: "blue", color: "white" }}
+                        _hover={{ backgroundColor: "#0b428b", color: "white" }}
                       >
                         Search
                       </Button>
@@ -907,7 +907,7 @@ const Navbar = () => {
                         backgroundColor={"blue"}
                         borderRadius={"2rem"}
                         marginLeft={"1rem"}
-                        _hover={{ backgroundColor: "blue", color: "white" }}
+                        _hover={{ backgroundColor: "#0b428b", color: "white" }}
                       >
                         Search
                       </Button>
@@ -1173,6 +1173,304 @@ const Navbar = () => {
                 <TabPanels>
                   <TabPanel>
                   <div
+                      style={{ justifyContent: "center", alignItems: "center",marginRight:'10%'}}
+                    >
+                      {selectedCount > 2} 
+                      {
+                        <div
+                          style={{
+                            display: "flex",
+                            flexDirection: "row",
+                            marginTop: "2rem",
+                          }}
+                        >
+                          <InputGroup width={"18%"} marginLeft="3%">
+                            <InputLeftElement pointerEvents="none">
+                              <FaLocationDot color="black.1000" />
+                            </InputLeftElement>
+                            <Input
+                              type="text"
+                              placeholder="Leaving from"
+                              border={"1.5px solid black"}
+                              borderRadius={"1rem"}
+                              _hover={{
+                                border: "1.5px solid black",
+                                borderRadius: "1rem",
+                              }}
+                            />
+                          </InputGroup>
+                          <InputGroup width={"18%"} marginLeft="3%">
+                            <InputLeftElement
+                              pointerEvents="none"
+                              marginLeft={"-10%"}
+                            >
+                              <FaLocationDot color="black.1000" />
+                            </InputLeftElement>
+                            <Input
+                              type="text"
+                              placeholder="Going to"
+                              marginLeft="-10%"
+                              border={"1.5px solid black"}
+                              borderRadius={"1rem"}
+                              _hover={{
+                                border: "1.5px solid black",
+                                borderRadius: "1rem",
+                              }}
+                            />
+                          </InputGroup>
+                          <InputGroup width={"40%"}>
+                            <h5
+                              style={{
+                                marginTop: "2%",
+                                marginRight: "2%",
+                                marginLeft: "2%",
+                              }}
+                            >
+                              From
+                            </h5>
+                            <Input
+                              placeholder="Dates"
+                              size="md"
+                              type="date"
+                              border={"1.5px solid black"}
+                              borderRadius={"1rem"}
+                              _hover={{
+                                border: "1.5px solid black",
+                                borderRadius: "1rem",
+                              }}
+                            />
+                            <h5
+                              style={{
+                                marginTop: "2%",
+                                marginRight: "2%",
+                                marginLeft: "2%",
+                              }}
+                            >
+                              To
+                            </h5>
+                            <Input
+                              size="md"
+                              type="date"
+                              border={"1.5px solid black"}
+                              borderRadius={"1rem"}
+                              _hover={{
+                                border: "1.5px solid black",
+                                borderRadius: "1rem",
+                              }}
+                            />
+                            <h5
+                              style={{
+                                marginTop: "2%",
+                                marginRight: "2%",
+                                marginLeft: "5%",
+                              }}
+                            />
+                          </InputGroup>
+                          <InputGroup width={"23%"}>
+                            <InputLeftElement pointerEvents="none">
+                              <FaUser
+                                color="black.1000"
+                                style={{ marginRight: "1rem" }}
+                              />
+                            </InputLeftElement>
+                            <Input
+                              _hover={{
+                                border: "1.5px solid black",
+                                borderRadius: "1rem",
+                              }}
+                              border={"1.5px solid black"}
+                              borderRadius={"1rem"}
+                              marginLeft={"-4%"}
+                              type="text"
+                              placeholder="Travelers"
+                              value={`${travelers.adults} Adults, ${travelers.children} Children, ${travelers.infants} Infants`}
+                              onClick={() => setIsOpen(true)}
+                            />
+                            <Popover
+                              isOpen={isOpen}
+                              onClose={() => setIsOpen(false)}
+                            >
+                              <PopoverContent
+                                position={"fixed"}
+                                top={"-25%"}
+                                marginLeft={"-12%"}
+                              >
+                                <PopoverHeader fontWeight="semibold">
+                                  Room 1
+                                </PopoverHeader>
+                                <PopoverBody>
+                                  <div>
+                                    <span>Adults: </span>
+                                    <Button
+                                      variant="outline"
+                                      size="xs"
+                                      onClick={() => handleDecrement("adults")}
+                                      border={"1.5px solid black"}
+                                      borderRadius={"1rem"}
+                                    >
+                                      -
+                                    </Button>
+                                    <span style={{ margin: "0 10px" }}>
+                                      {travelers.adults}
+                                    </span>
+                                    <Button
+                                      variant="outline"
+                                      size="xs"
+                                      onClick={() => handleIncrement("adults")}
+                                      border={"1.5px solid black"}
+                                      borderRadius={"1rem"}
+                                    >
+                                      +
+                                    </Button>
+                                  </div>
+                                  <br />
+                                  <div>
+                                    <span>Children: </span>
+                                    <Button
+                                      variant="outline"
+                                      size="xs"
+                                      onClick={() =>
+                                        handleDecrement("children")
+                                      }
+                                      border={"1.5px solid black"}
+                                      borderRadius={"1rem"}
+                                    >
+                                      -
+                                    </Button>
+                                    <span style={{ margin: "0 10px" }}>
+                                      {travelers.children}
+                                    </span>
+                                    <Button
+                                      variant="outline"
+                                      size="xs"
+                                      onClick={() =>
+                                        handleIncrement("children")
+                                      }
+                                      border={"1.5px solid black"}
+                                      borderRadius={"1rem"}
+                                    >
+                                      +
+                                    </Button>
+                                  </div>
+                                  <br />
+                                  <div>
+                                    <span>Infants: </span>
+                                    <Button
+                                      variant="outline"
+                                      size="xs"
+                                      onClick={() => handleDecrement("infants")}
+                                      border={"1.5px solid black"}
+                                      borderRadius={"1rem"}
+                                    >
+                                      -
+                                    </Button>
+                                    <span style={{ margin: "0 10px" }}>
+                                      {travelers.infants}
+                                    </span>
+                                    <Button
+                                      variant="outline"
+                                      size="xs"
+                                      onClick={() => handleIncrement("infants")}
+                                      border={"1.5px solid black"}
+                                      borderRadius={"1rem"}
+                                    >
+                                      +
+                                    </Button>
+                                  </div>
+                                  <br />
+                                  <PopoverTrigger>
+                                    <Button
+                                      color="white"
+                                      backgroundColor={"blue"}
+                                      padding={"3%"}
+                                      borderRadius={"1.5rem"}
+                                      marginLeft="30%"
+                                      variant="link"
+                                      onClick={() => setIsOpen(true)}
+                                    >
+                                      Done
+                                    </Button>
+                                  </PopoverTrigger>
+                                </PopoverBody>
+                              </PopoverContent>
+                            </Popover>
+                          </InputGroup>
+                          <Button
+                            color={"white"}
+                            backgroundColor={"blue"}
+                            borderRadius={"2rem"}
+                            marginLeft={"1rem"}
+                            _hover={{ backgroundColor: "#0b428b", color: "white" }}
+                          >
+                            Search
+                          </Button>
+                          <Popover isOpen={isPopoverOpen}>
+                            <PopoverTrigger>
+                              <Checkbox
+                                defaultChecked={isPopoverOpen}
+                                onChange={handleCheckboxChange}
+                                marginTop={"7%"}
+                                marginLeft={"-112%"}
+                              >
+                                I only need accommodation for part of my trip
+                              </Checkbox>
+                            </PopoverTrigger>
+                            {isPopoverOpen && (
+                              <PopoverBody
+                                position={"fixed"}
+                                marginTop={"7%"}
+                                marginLeft={"1%"}
+                              >
+                                <InputGroup width={"110%"}>
+                                  <h5
+                                    style={{
+                                      marginTop: "2%",
+                                      marginRight: "2%",
+                                      marginLeft: "5%",
+                                    }}
+                                  >
+                                    From
+                                  </h5>
+                                  <Input
+                                    placeholder="Dates"
+                                    size="md"
+                                    type="date"
+                                    border={"1.5px solid black"}
+                                    borderRadius={"1rem"}
+                                    _hover={{
+                                      border: "1.5px solid black",
+                                      borderRadius: "1rem",
+                                    }}
+                                  />
+                                  <h5
+                                    style={{
+                                      marginTop: "2%",
+                                      marginRight: "2%",
+                                      marginLeft: "5%",
+                                    }}
+                                  >
+                                    To
+                                  </h5>
+                                  <Input
+                                    size="md"
+                                    type="date"
+                                    border={"1.5px solid black"}
+                                    borderRadius={"1rem"}
+                                    _hover={{
+                                      border: "1.5px solid black",
+                                      borderRadius: "1rem",
+                                    }}
+                                  />
+                                </InputGroup>
+                              </PopoverBody>
+                            )}
+                          </Popover>
+                        </div>
+                      }
+                    </div>
+                  </TabPanel>
+                  <TabPanel>
+                  <div
                       style={{ justifyContent: "center", alignItems: "center" }}
                     >
                       {selectedCount > 2} 
@@ -1407,77 +1705,12 @@ const Navbar = () => {
                             backgroundColor={"blue"}
                             borderRadius={"2rem"}
                             marginLeft={"1rem"}
-                            _hover={{ backgroundColor: "blue", color: "white" }}
+                            _hover={{ backgroundColor: "#0b428b", color: "white" }}
                           >
                             Search
                           </Button>
-                          <Popover isOpen={isPopoverOpen}>
-                            <PopoverTrigger>
-                              <Checkbox
-                                defaultChecked={isPopoverOpen}
-                                onChange={handleCheckboxChange}
-                                marginTop={"7%"}
-                                marginLeft={"-112%"}
-                              >
-                                I only need accommodation for part of my trip
-                              </Checkbox>
-                            </PopoverTrigger>
-                            {isPopoverOpen && (
-                              <PopoverBody
-                                position={"fixed"}
-                                marginTop={"7%"}
-                                marginLeft={"1%"}
-                              >
-                                <InputGroup width={"110%"}>
-                                  <h5
-                                    style={{
-                                      marginTop: "2%",
-                                      marginRight: "2%",
-                                      marginLeft: "5%",
-                                    }}
-                                  >
-                                    From
-                                  </h5>
-                                  <Input
-                                    placeholder="Dates"
-                                    size="md"
-                                    type="date"
-                                    border={"1.5px solid black"}
-                                    borderRadius={"1rem"}
-                                    _hover={{
-                                      border: "1.5px solid black",
-                                      borderRadius: "1rem",
-                                    }}
-                                  />
-                                  <h5
-                                    style={{
-                                      marginTop: "2%",
-                                      marginRight: "2%",
-                                      marginLeft: "5%",
-                                    }}
-                                  >
-                                    To
-                                  </h5>
-                                  <Input
-                                    size="md"
-                                    type="date"
-                                    border={"1.5px solid black"}
-                                    borderRadius={"1rem"}
-                                    _hover={{
-                                      border: "1.5px solid black",
-                                      borderRadius: "1rem",
-                                    }}
-                                  />
-                                </InputGroup>
-                              </PopoverBody>
-                            )}
-                          </Popover>
+                        </div>}
                         </div>
-                      }
-                    </div>
-                  </TabPanel>
-                  <TabPanel>
-                    <h1>Airport transportation</h1>
                   </TabPanel>
                 </TabPanels>
               </Tabs>
@@ -1771,7 +2004,7 @@ const Navbar = () => {
                           backgroundColor={"blue"}
                           borderRadius={"2rem"}
                           marginLeft={"1rem"}
-                          _hover={{ backgroundColor: "blue", color: "white" }}
+                          _hover={{ backgroundColor: "#0b428b", color: "white" }}
                         >
                           Search
                         </Button>
@@ -2073,7 +2306,7 @@ const Navbar = () => {
                             backgroundColor={"blue"}
                             borderRadius={"2rem"}
                             marginLeft={"1rem"}
-                            _hover={{ backgroundColor: "blue", color: "white" }}
+                            _hover={{ backgroundColor: "#0b428b", color: "white" }}
                           >
                             Search
                           </Button>
@@ -2208,7 +2441,7 @@ const Navbar = () => {
                   backgroundColor={"blue"}
                   borderRadius={"2rem"}
                   marginLeft={"1rem"}
-                  _hover={{ backgroundColor: "blue", color: "white" }}
+                  _hover={{ backgroundColor: "#0b428b", color: "white" }}
                   padding={"2% 3%"}
                 >
                   Search
@@ -2216,7 +2449,75 @@ const Navbar = () => {
               </div>
             </TabPanel>
             <TabPanel align="start">
-              <div>For expert cruise advice, call 1-855-257-1605.</div>
+              <div>For expert cruise advice, call 1-855-257-1605.</div><br />
+              <div style={{ display: "flex" }}>
+                <InputGroup width={"50%"} marginLeft="3%">
+                  <InputLeftElement pointerEvents="none">
+                    <FaLocationDot color="black.1000" />
+                  </InputLeftElement>
+                  <Input
+                    type="text"
+                    placeholder="Going to"
+                    border={"1.5px solid black"}
+                    borderRadius={"1rem"}
+                    _hover={{
+                      border: "1.5px solid black",
+                      borderRadius: "1rem",
+                    }}
+                  />
+                </InputGroup>
+                <InputGroup width={"50%"}>
+                  <h5
+                    style={{
+                      marginTop: "2%",
+                      marginRight: "2%",
+                      marginLeft: "5%",
+                    }}
+                  >
+                    From
+                  </h5>
+                  <Input
+                    placeholder="Dates"
+                    size="md"
+                    type="date"
+                    border={"1.5px solid black"}
+                    borderRadius={"1rem"}
+                    _hover={{
+                      border: "1.5px solid black",
+                      borderRadius: "1rem",
+                    }}
+                  />
+                  <h5
+                    style={{
+                      marginTop: "2%",
+                      marginRight: "2%",
+                      marginLeft: "5%",
+                    }}
+                  >
+                    To
+                  </h5>
+                  <Input
+                    size="md"
+                    type="date"
+                    border={"1.5px solid black"}
+                    borderRadius={"1rem"}
+                    _hover={{
+                      border: "1.5px solid black",
+                      borderRadius: "1rem",
+                    }}
+                  />
+                </InputGroup>
+                <Button
+                  color={"white"}
+                  backgroundColor={"blue"}
+                  borderRadius={"2rem"}
+                  marginLeft={"1rem"}
+                  _hover={{ backgroundColor: "#0b428b", color: "white" }}
+                  padding={"2% 3%"}
+                >
+                  Search
+                </Button>
+              </div>
             </TabPanel>
           </TabPanels>
         </Tabs>
