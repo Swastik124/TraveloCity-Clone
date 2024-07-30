@@ -1,154 +1,169 @@
 import React from 'react'
-import {toast} from 'react-toastify'
+import { toast } from 'react-toastify'
 import "react-toastify/dist/ReactToastify.css";
 
-import { useState} from 'react';
+import { useState } from 'react';
 import './SignIn.css';
 import Home from './Home';
 
 
 export const SignUp = () => {
-    
-    const [userEmail, setUserEmail] = useState('');
-    const[userFirstName, setFirstName]= useState('');
-    const[userLastName,setLastName ] =useState('');
-    const [userpassword, setUserPassword] = useState('');
-    const [error, setError] = useState(null);
-    const [keepSignedIn, setKeepSignedIn] = useState(false);
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if(ValidityState()){
-            console.log('Form Submitted');
-            const userData = {
-              email: userEmail,
-              firstName: userFirstName,
-              lastName: userLastName,
-              password: userpassword,
-              keepSignedIn: keepSignedIn,
-              
-            };window.alert('sign up succesfull');
-          
-            fetch("http://localhost:3000/userData",{
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-                
+  const [userEmail, setUserEmail] = useState('');
+  const [userFirstName, setFirstName] = useState('');
+  const [userLastName, setLastName] = useState('');
+  const [userpassword, setUserPassword] = useState('');
+  const [error, setError] = useState(null);
+  const [keepSignedIn, setKeepSignedIn] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (ValidityState()) {
+      console.log('Form Submitted');
+      const userData = {
+        email: userEmail,
+        firstName: userFirstName,
+        lastName: userLastName,
+        password: userpassword,
+        keepSignedIn: keepSignedIn,
+
+      };
+      fetch("http://localhost:3000/userData/").then((res) => {
+        // const =res.json();
+        return res.json();
+      }).then((resp) => {
+        let userfound = 0;
+        for (let i = 0; i < resp.length; i++) {
+          if (resp[i].email === userEmail) {
+            window.location.href = "/SignUp";
+            userfound = 1;
+
+          }
+        }
+        if (userfound == 1) {
+          window.alert('User already exists.Please try with a different email.');
+        } else {
+          fetch("http://localhost:3000/userData", {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
 
             },
-          body: JSON.stringify(userData),
+            body: JSON.stringify(userData),
           })
-            
-            
-            .then((res)=>{
-                return res.json();
-            }).then((resp)=>{
-                console.log(resp);
-                
-            }).catch((err)=>{
-                window.alert(err);
+
+            .then((res) => {
+              return res.json();
+            }).then((resp) => {
+              console.log(resp);
+              window.alert('Registered successfully')
+              window.location.href='/Home';
+
+            }).catch((err) => {
+              window.alert(err);
             })
         }
+      })
     }
+  }
+const ValidityState = () => {
+  let result = true;
+  if ((userEmail === '' || userEmail === null) && result == true) {
+    window.alert('Please enter User email');
+    result = false;
 
-    const ValidityState = () => {
-        let result=true;
-        if((userEmail ==='' || userEmail=== null) && result==true){
-            window.alert('Please enter User email');
-            result=false;
-            
-        }
-        if((userFirstName==='' || userFirstName=== null) && result==true){
-          window.alert('Please enter First Name');
-          result=false;
-        }
-        if((userLastName==='' || userLastName=== null)  && result==true){
-          window.alert('Please enter Last Name');
-          result=false;
-        }
-    
-    if((userpassword ==='' || userpassword=== null) && result==true){
-      window.alert('Please enter password');
-      result=false;
-    }
-    return result;
-}
-
-    const handleCheckboxChange = () => {
-    setKeepSignedIn(!keepSignedIn);
-  };
-  function goTo(){
-    window.location.href = "/Home";
+  }
+  if ((userFirstName === '' || userFirstName === null) && result == true) {
+    window.alert('Please enter First Name');
+    result = false;
+  }
+  if ((userLastName === '' || userLastName === null) && result == true) {
+    window.alert('Please enter Last Name');
+    result = false;
   }
 
-    return (
-        
-        <div className="signInContainer">
-            
-            <div id="signInHead" style={{ height: '3rem' }}>
-                <button className='prevBtn' onClick={goTo}>
-                    <img src='https://www.svgrepo.com/show/356410/arrow-left-3.svg' />
-                </button>
-                <img id='headerLogo' style={{height:'1.875rem', padding:'0', margin:'0'}} src='https://www.travelocity.com/_dms/interstitial/logo.svg?locale=en_US&siteid=80001&2' />
-            </div><hr />
-    
-          <div className='signInBody'>
-            <h1>Create an account</h1>
+  if ((userpassword === '' || userpassword === null) && result == true) {
+    window.alert('Please enter password');
+    result = false;
+  }
+  return result;
+}
 
-            <form onSubmit={handleSubmit}>
-            <label>
-                <input
-                  type="text"
-                  id="Email"
-                  placeholder='Email'
-                  value={userEmail} 
-                  onChange={e=>setUserEmail(e.target.value)}/>
-              </label>
-                <label>
-                    <input
-                    type="text"
-                    id='FirstName'
-                    placeholder='First Name'
-                    value={userFirstName} 
-                    onChange={e=>setFirstName(e.target.value)} />
-                </label>
-                <label>
-                    <input
-                    type="text"
-                    id='LastName'
-                    placeholder='Last Name'
-                    value={userLastName} 
-                    onChange={e=>setLastName(e.target.value)} />
-                </label>
-              
-              <label>
-                <input
-                  type="password"
-                  id="pass"
-                  placeholder='Password'
-                  value={userpassword} 
-                  onChange={e=>setUserPassword(e.target.value)}
-                 />
-              </label>
-              <div style={{ display: 'flex', alignItems: 'center' }}>
-                <input type="checkbox" checked={keepSignedIn} onChange={handleCheckboxChange} />
-                <label>Keep me signed in</label>
-              </div>
-              <p id="keepSignedInMessage" style={{ display: keepSignedIn ? 'block' : 'none' }}>Selecting this checkbox will keep you signed into your account on this device until you sign out. Do not select this on shared devices.</p><br/>
-              {error && <p style={{ color: 'red' }}>{error}</p>}
-    
-              <p>By signing in, I agree to the Travelocity <a href='https://www.travelocity.com/lp/lg-terms' style={{color:'blue', textDecoration:'underline'}}>Terms and Conditions </a>and <a href='https://www.travelocity.com/lp/b/lg-privacypolicy' style={{color:'blue', textDecoration:'underline'}}>Privacy Statement.</a></p><br/>
-    
-              <button id="submitBtn" type="submit">Continue</button>
-            </form>
-            
-          </div><br/>
-          <p>Already have an account <a href='SignIn'style={{color:'blue', textDecoration:'underline'}}>Sign In</a></p><br/>
-          <div className='icon'>
-            <img id='apple' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA5r0_FrSjm2OgttQLwh_CnVCnzbJ7dLv6oA&s'/>
-            <img id='fb' src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3XyB5KnLk2ALgsLWUwpbVDuI6WOrmsdu9leOapY3J1YE8YJzd'/>
-          </div>
+const handleCheckboxChange = () => {
+  setKeepSignedIn(!keepSignedIn);
+};
+function goTo() {
+  window.location.href = "/Home";
+}
+
+return (
+
+  <div className="signInContainer">
+
+    <div id="signInHead" style={{ height: '3rem' }}>
+      <button className='prevBtn' onClick={goTo}>
+        <img src='https://www.svgrepo.com/show/356410/arrow-left-3.svg' />
+      </button>
+      <img id='headerLogo' style={{ height: '1.875rem', padding: '0', margin: '0' }} src='https://www.travelocity.com/_dms/interstitial/logo.svg?locale=en_US&siteid=80001&2' />
+    </div><hr />
+
+    <div className='signInBody'>
+      <h1>Create an account</h1>
+
+      <form onSubmit={handleSubmit}>
+        <label>
+          <input
+            type="text"
+            id="Email"
+            placeholder='Email'
+            value={userEmail}
+            onChange={e => setUserEmail(e.target.value)} />
+        </label>
+        <label>
+          <input
+            type="text"
+            id='FirstName'
+            placeholder='First Name'
+            value={userFirstName}
+            onChange={e => setFirstName(e.target.value)} />
+        </label>
+        <label>
+          <input
+            type="text"
+            id='LastName'
+            placeholder='Last Name'
+            value={userLastName}
+            onChange={e => setLastName(e.target.value)} />
+        </label>
+
+        <label>
+          <input
+            type="password"
+            id="pass"
+            placeholder='Password'
+            value={userpassword}
+            onChange={e => setUserPassword(e.target.value)}
+          />
+        </label>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <input type="checkbox" checked={keepSignedIn} onChange={handleCheckboxChange} />
+          <label>Keep me signed in</label>
+        </div>
+        <p id="keepSignedInMessage" style={{ display: keepSignedIn ? 'block' : 'none' }}>Selecting this checkbox will keep you signed into your account on this device until you sign out. Do not select this on shared devices.</p><br />
+        {error && <p style={{ color: 'red' }}>{error}</p>}
+
+        <p>By signing in, I agree to the Travelocity <a href='https://www.travelocity.com/lp/lg-terms' style={{ color: 'blue', textDecoration: 'underline' }}>Terms and Conditions </a>and <a href='https://www.travelocity.com/lp/b/lg-privacypolicy' style={{ color: 'blue', textDecoration: 'underline' }}>Privacy Statement.</a></p><br />
+
+        <button id="submitBtn" type="submit">Continue</button>
+      </form>
+
+    </div><br />
+    <p>Already have an account <a href='SignIn' style={{ color: 'blue', textDecoration: 'underline' }}>Sign In</a></p><br />
+    <div className='icon'>
+      <img id='apple' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA5r0_FrSjm2OgttQLwh_CnVCnzbJ7dLv6oA&s' />
+      <img id='fb' src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3XyB5KnLk2ALgsLWUwpbVDuI6WOrmsdu9leOapY3J1YE8YJzd' />
     </div>
-  )
+  </div>
+)
 }
 export default SignUp;

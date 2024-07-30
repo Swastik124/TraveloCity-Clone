@@ -14,7 +14,6 @@ export const SignIn = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if(ValidityState()){
-            console.log('Form Submitted');
             fetch("http://localhost:3000/userData/").then((res)=>{
                 // const =res.json();
                 return res.json();
