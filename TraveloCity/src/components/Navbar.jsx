@@ -1,4 +1,4 @@
-import React, { createElement, useState } from "react";
+import React, { useState } from "react";
 import {
   Tabs,
   TabList,
@@ -166,8 +166,8 @@ const Navbar = () => {
   // }
 
   return (
-    <div style={{ marginTop: "3rem"}} className="navbar">
-      <div className="navbar-container" >
+    <div style={{ marginTop: "3rem",border:"1px solid grey",borderRadius:"2rem",marginBottom:"3%"}} className="navbar">
+      <div className="navbar-container" style={{marginBottom:"2%"}}>
         <Tabs
           onChange={(index) => setTabIndex(index)}
           position="relative"
