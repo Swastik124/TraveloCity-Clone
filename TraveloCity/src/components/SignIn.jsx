@@ -21,17 +21,16 @@ export const SignIn = () => {
             }).then((resp)=>{
                 console.log(resp)
                 if (Object.keys(resp).length === 0) {
-                    window.alert('Please Enter valid username',
-                    );
+                    window.alert('Please Enter valid username');
                     window.location.href="/SignIn";
                 } else {
                     
-                    console.log(x);
-                    for (let i=0;i<x.length;i++)
+                    // console.log(x);
+                    for (let i=0;i<resp.length;i++)
                     {
-                        if (x[i].email === userEmail && x[i].password === userpassword) {
+                        if (resp[i].email === userEmail && x[i].password === userpassword) {
                             window.location.href = "/SignIn";
-                            console.log(x[i].email);
+                            console.log(resp[i].email);
                         }else{
                            console.log("error");
                           
@@ -58,10 +57,10 @@ export const SignIn = () => {
     const ValidityState = () => {
         let result=true;
         if(userEmail ==='' || userEmail=== null){
-            toast.warning('Please enter User email');
+          window.alert('Please enter User email');
         }
         if(userpassword ==='' || userpassword=== null){
-            toast.warning('Please enter password');
+          window.alert('Please enter password');
         }
         return result;
     }

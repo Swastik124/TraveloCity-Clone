@@ -26,12 +26,15 @@ export const SignUp = () => {
               lastName: userLastName,
               password: userpassword,
               keepSignedIn: keepSignedIn,
-            };
+              
+            };window.alert('sign up succesfull');
           
-            fetch("http://localhost:3000/userData/",{
+            fetch("http://localhost:3000/userData",{
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
+                
+
             },
           body: JSON.stringify(userData),
           })
@@ -43,25 +46,30 @@ export const SignUp = () => {
                 console.log(resp);
                 
             }).catch((err)=>{
-                console.log(err);
+                window.alert(err);
             })
         }
     }
 
     const ValidityState = () => {
         let result=true;
-        if(userEmail ==='' || userEmail=== null){
-            toast.warning('Please enter User email');
+        if((userEmail ==='' || userEmail=== null) && result==true){
+            window.alert('Please enter User email');
+            result=false;
+            
         }
-        if(userFirstName==='' || userFirstName=== null){
-            toast.warning('Please enter First Name');
+        if((userFirstName==='' || userFirstName=== null) && result==true){
+          window.alert('Please enter First Name');
+          result=false;
         }
-        if(userLastName==='' || userLastName=== null){
-            toast.warning('Please enter Last Name');
-            }
+        if((userLastName==='' || userLastName=== null)  && result==true){
+          window.alert('Please enter Last Name');
+          result=false;
+        }
     
-    if(userpassword ==='' || userpassword=== null){
-        toast.warning('Please enter password');
+    if((userpassword ==='' || userpassword=== null) && result==true){
+      window.alert('Please enter password');
+      result=false;
     }
     return result;
 }
