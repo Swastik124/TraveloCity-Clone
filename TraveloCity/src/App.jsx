@@ -4,8 +4,7 @@ import Home from "./components/Home"
  import SignUp from './components/SignUp'
 import SignIn from './components/SignIn';
 import DestinationDetails from './components/DestinationDetails'
-// import SignIn from './components/SignIn';
-// import SignUp from './components/SignUp';
+import PerfectTrip from './components/PerfectTrip';
 // import Navbar from './components/Navbar'
 
 function App() {
@@ -17,6 +16,7 @@ function App() {
               <Route path="/SignUp" element={<SignUp />} />
               <Route path="/SignIn" element={<SignIn />} />
               <Route path="/DestinationDetails" element={<DestinationDetails />} />
+              <Route path='/PerfectTrip' element={<PerfectTrip/>}/>
               {/* <Route path="/Header" element={<Header />} />
               <Route path="/Footer" element={<Footer />} /> */}
               {/* <Route path="/Navbar" element={<Navbar />} /> */}

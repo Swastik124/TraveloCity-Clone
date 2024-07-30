@@ -20,12 +20,11 @@
       ],
       "location": {
         "city": "Miami",
-        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToKZWeaE5Zp7qlxEGq_4pjDk3XsJJTv0ONLw&s",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToKZWeaE5Zp7qlxEGq_4pjDk3XsJJTv0ONLw&s",
         "state": "Florida",
         "country": "USA"
       },
       "rating": 4.5,
-
       "view": "excellent",
       "amenities": [
         "Swimming pool",
@@ -34,8 +33,7 @@
         "Restaurant",
         "Bar"
       ],
-
-      "price": 200.0,
+      "price": 200,
       "currency": "USD",
       "reviews": "66 reviews"
     },
@@ -43,10 +41,8 @@
       "id": 2,
       "name": "Cozy City Hotel",
       "description": "Charming boutique hotel in the heart of the city",
-
       "image": [
         {
-
           "image": "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=600"
         },
         {
@@ -59,24 +55,21 @@
           "image": "https://images.trvl-media.com/lodging/17000000/16530000/16529000/16528927/05800c1a.jpg?impolicy=resizecrop&rw=1200&ra=fit"
         }
       ],
-
       "location": {
         "city": "London",
-        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0S8GtO8kkLbkP6uU2eNy-DWoiUdnZITH1rQ&s",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0S8GtO8kkLbkP6uU2eNy-DWoiUdnZITH1rQ&s",
         "state": "England",
         "country": "UK"
       },
       "rating": 4.2,
       "view": "excellent",
-
       "amenities": [
         "Free Wi-Fi",
         "Breakfast included",
         "Laundry service",
         "Business center"
       ],
-
-      "price": 120.0,
+      "price": 120,
       "currency": "GBP",
       "reviews": "45 reviews"
     },
@@ -86,7 +79,6 @@
       "description": "Cozy mountain lodge with breathtaking views of the surrounding peaks",
       "image": [
         {
-
           "image": "https://images.pexels.com/photos/16437593/pexels-photo-16437593/free-photo-of-hotel-villa-de-adeje-beach-on-tenerifa-spain.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
         },
         {
@@ -101,7 +93,7 @@
       ],
       "location": {
         "city": "Aspen",
-        "img":"https://afar.brightspotcdn.com/dims4/default/4ca20f1/2147483647/strip/false/crop/2000x1333+0+0/resize/1486x990!/quality/90/?url=https%3A%2F%2Fk3-prod-afar-media.s3.us-west-2.amazonaws.com%2Fbrightspot%2F57%2F48%2F9aeb96e71835c0883e3b8ad14f0d%2Foriginal-europe-alternatives-usa-aspen-co-shutterstock-1217302321.jpg",
+        "img": "https://afar.brightspotcdn.com/dims4/default/4ca20f1/2147483647/strip/false/crop/2000x1333+0+0/resize/1486x990!/quality/90/?url=https%3A%2F%2Fk3-prod-afar-media.s3.us-west-2.amazonaws.com%2Fbrightspot%2F57%2F48%2F9aeb96e71835c0883e3b8ad14f0d%2Foriginal-europe-alternatives-usa-aspen-co-shutterstock-1217302321.jpg",
         "state": "Colorado",
         "country": "USA"
       },
@@ -114,8 +106,7 @@
         "Restaurant",
         "Bar"
       ],
-
-      "price": 350.0,
+      "price": 350,
       "currency": "USD",
       "reviews": "100 reviews"
     },
@@ -123,10 +114,8 @@
       "id": 4,
       "name": "Tropical Oasis Resort",
       "description": "Luxurious resort surrounded by lush tropical gardens and a private beach",
-
       "image": [
         {
-
           "image": "https://images.pexels.com/photos/14024047/pexels-photo-14024047.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
         },
         {
@@ -141,7 +130,7 @@
       ],
       "location": {
         "city": "Cancun",
-        "img":"https://www.rutasyrutinas.com/wp-content/uploads/2019/10/hotel-cancun-fiesta-americana11.jpg",
+        "img": "https://www.rutasyrutinas.com/wp-content/uploads/2019/10/hotel-cancun-fiesta-americana11.jpg",
         "state": "Quintana Roo",
         "country": "Mexico"
       },
@@ -155,8 +144,7 @@
         "Restaurant",
         "Bar"
       ],
-
-      "price": 400.0,
+      "price": 400,
       "currency": "USD",
       "reviews": "45 reviews"
     },
@@ -180,7 +168,7 @@
       ],
       "location": {
         "city": "Rome",
-        "img":"https://fullsuitcase.com/wp-content/uploads/2022/05/Naples-day-trips-and-day-tours-from-Napoli-Italy.jpg.webp",
+        "img": "https://fullsuitcase.com/wp-content/uploads/2022/05/Naples-day-trips-and-day-tours-from-Napoli-Italy.jpg.webp",
         "state": "naples",
         "country": "Italy"
       },
@@ -193,7 +181,7 @@
         "Business center",
         "Restaurant"
       ],
-      "price": 180.0,
+      "price": 180,
       "currency": "EUR",
       "reviews": "66 reviews"
     },
@@ -217,11 +205,10 @@
       ],
       "location": {
         "city": "Paris",
-        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToKZWeaE5Zp7qlxEGq_4pjDk3XsJJTv0ONLw&s",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToKZWeaE5Zp7qlxEGq_4pjDk3XsJJTv0ONLw&s",
         "state": "Paris",
         "country": "France"
       },
-
       "rating": 4.8,
       "view": "excellent",
       "amenities": [
@@ -255,7 +242,7 @@
       ],
       "location": {
         "city": "Cancun",
-        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToKZWeaE5Zp7qlxEGq_4pjDk3XsJJTv0ONLw&s",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToKZWeaE5Zp7qlxEGq_4pjDk3XsJJTv0ONLw&s",
         "state": "Quintana Roo",
         "country": "Mexico"
       },
@@ -292,10 +279,9 @@
       ],
       "location": {
         "city": "New York",
-        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToKZWeaE5Zp7qlxEGq_4pjDk3XsJJTv0ONLw&s",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToKZWeaE5Zp7qlxEGq_4pjDk3XsJJTv0ONLw&s",
         "state": "New York",
         "country": "USA"
-
       },
       "rating": 4.6,
       "view": "excellent",
@@ -305,7 +291,7 @@
         "Laundry service",
         "Business center"
       ],
-      "price": 120.0,
+      "price": 120,
       "currency": "GBP",
       "reviews": "45 reviews"
     },
@@ -329,7 +315,7 @@
       ],
       "location": {
         "city": "New York",
-        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToKZWeaE5Zp7qlxEGq_4pjDk3XsJJTv0ONLw&s",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToKZWeaE5Zp7qlxEGq_4pjDk3XsJJTv0ONLw&s",
         "state": "New York",
         "country": "USA"
       },
@@ -341,7 +327,7 @@
         "Laundry service",
         "Business center"
       ],
-      "price": 120.0,
+      "price": 120,
       "currency": "GBP",
       "reviews": "45 reviews"
     },
@@ -365,7 +351,7 @@
       ],
       "location": {
         "city": "New York",
-        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToKZWeaE5Zp7qlxEGq_4pjDk3XsJJTv0ONLw&s",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToKZWeaE5Zp7qlxEGq_4pjDk3XsJJTv0ONLw&s",
         "state": "New York",
         "country": "USA"
       },
@@ -377,142 +363,27 @@
         "Laundry service",
         "Business center"
       ],
-      "price": 120.0,
+      "price": 120,
       "currency": "GBP",
       "reviews": "45 reviews"
     }
   ],
   "userData": [
     {
-      "userName": "Anindita Panigrahi",
-      "email": "anni@gmail.com",
-      "password": "changeme",
-      "id": "792b"
+      "id": "a39a",
+      "email": "ani124@gmail.com",
+      "firstName": "Ani",
+      "lastName": "Pani",
+      "password": "ani",
+      "keepSignedIn": false
     },
     {
-      "userName": "Swastik Mohanty",
+      "id": "f719",
       "email": "swastik@gmail.com",
-      "password": "changeme",
-      "id": "844b"
-    },
-    {
-      "userName": "Akanksha Pttnaik ",
-      "email": "akanksha@gmail.com",
-      "password": " changeme",
-      "id": "1a25"
-    },
-    {
-      "id": "814a",
-      "firstName": "Anindita",
-      "lastName": "Panigrahi",
-      "email": "ani@gmail.com",
-      "password": "1234"
-    },
-    {
-      "id": "95c4",
-      "firstName": "Anindita",
-      "lastName": "Panigrahi",
-      "email": "ani@gmail.com",
-      "password": "1234"
-    },
-    {
-      "id": "b729",
-      "firstName": "Anindita",
-      "lastName": "Panigrahi",
-      "email": "ani@gmail.com",
-      "password": "1234"
-    },
-    {
-      "id": "b125",
-      "firstName": "Anindita",
-      "lastName": "Panigrahi",
-      "email": "ani@gmail.com",
-      "password": "1234"
-    },
-    {
-      "id": "182c",
-      "firstName": "Anindita",
-      "lastName": "Panigrahi",
-      "email": "ani@gmail.com",
-      "password": "1234"
-    },
-    {
-      "id": "60fe",
-      "firstName": "Anindita",
-      "lastName": "Panigrahi",
-      "email": "ani@gmail.com",
-      "password": "1234"
-    },
-    {
-      "id": "1f0c",
-      "firstName": "Anindita",
-      "lastName": "Panigrahi",
-      "email": "ani@gmail.com",
-      "password": "1234"
-    },
-    {
-      "id": "0c0b",
-      "firstName": "Anindita",
-      "lastName": "Panigrahi",
-      "email": "ani@gmail.com",
-      "password": "1234"
-    },
-    {
-      "id": "c786",
-      "firstName": "Anindita",
-      "lastName": "Panigrahi",
-      "email": "ani@gmail.com",
-      "password": "1234"
-    },
-    {
-      "id": "cdc2",
-      "firstName": "Anindita",
-      "lastName": "Panigrahi",
-      "email": "ani@gmail.com",
-      "password": "1234"
-    },
-    {
-      "id": "c30e",
-      "firstName": "Anindita",
-      "lastName": "Panigrahi",
-      "email": "ani@gmail.com",
-      "password": "1234"
-    },
-    {
-      "id": "9f91",
-      "firstName": "Anindita",
-      "lastName": "Panigrahi",
-      "email": "ani@gmail.com",
-      "password": "1234"
-    },
-    {
-      "id": "b2c4",
-      "firstName": "Anindita",
-      "lastName": "Panigrahi",
-      "email": "ani@gmail.com",
-      "password": "1234"
-    },
-    {
-      "id": "7e97",
-      "firstName": "Anindita",
-      "lastName": "Panigrahi",
-      "email": "ani@gmail.com",
-      "password": "1234abc"
-    },
-    {
-      "id": "25b4",
-      "firstName": "Anindita",
-      "lastName": "Panigrahi",
-      "email": "ani@gmail.com",
-      "password": "1234abc"
-    },
-    {
-      "id": "b869",
-      "firstName": "Anindita",
-      "lastName": "Panigrahi",
-      "email": "ani@gmail.com",
-      "password": "ap23"
+      "firstName": "Swastik",
+      "lastName": "Mohanty",
+      "password": "1234",
+      "keepSignedIn": false
     }
   ]
 }
-

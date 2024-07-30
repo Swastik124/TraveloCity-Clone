@@ -14,54 +14,36 @@ export const SignIn = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if(ValidityState()){
-            console.log('Form Submitted');
             fetch("http://localhost:3000/userData/").then((res)=>{
+                // const =res.json();
                 return res.json();
-               
-            }).then((resp)=>{
-                console.log(resp)
-                if (Object.keys(resp).length === 0) {
-                    window.alert('Please Enter valid username',
-                    );
-                    window.location.href="/SignIn";
-                } else {
-                    
-                    console.log(x);
-                    for (let i=0;i<x.length;i++)
+            }).then((resp)=>{  
+                    let userfound=0;
+                    for (let i=0;i<resp.length;i++)
                     {
-                        if (x[i].email === userEmail && x[i].password === userpassword) {
+                        if (resp[i].email === userEmail && resp[i].password === userpassword) {
                             window.location.href = "/SignIn";
-                            console.log(x[i].email);
-                        }else{
-                           console.log("error");
-                          
-                        }
-                    }
-                    window.alert('Please Enter valid username or password');
-                    window.location.href="/SignIn";
-                    
-                    // if (resp.password === password) {
-                    //     toast.success('Success');
-                    //     sessionStorage.setItem('username',username);
-                    //     sessionStorage.setItem('userrole',resp.role);
-                    //     usenavigate('/')
-                    // }else{
-                    //     alert('Please Enter valid credentials');
-                    // }
+                            userfound=1;
+                            
+                        }}
+                       if (userfound==1){
+                        window.alert('login successfull')
+                        window.location.href = "/Home";
+                       }else{
+                        window.alert('user not found')
+                       }
+                    })
+                  }
                 }
-            // }).catch((err) => {
-            //     alert('Login Failed due to :' + err.message);
-            });
-        }
-    }
+
 
     const ValidityState = () => {
         let result=true;
         if(userEmail ==='' || userEmail=== null){
-            toast.warning('Please enter User email');
+          window.alert('Please enter User email');
         }
         if(userpassword ==='' || userpassword=== null){
-            toast.warning('Please enter password');
+          window.alert('Please enter password');
         }
         return result;
     }

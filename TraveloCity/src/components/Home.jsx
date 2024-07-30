@@ -40,7 +40,9 @@ const responsive = {
 
 function Home() {
   const [hotels, setHotels] = useState([]);
-
+  function perfect(){
+    window.location.href = "/PerfectTrip";
+  }
   useEffect(() => {
     fetch('http://localhost:3000/hotels')
       .then(response => response.json())
@@ -158,7 +160,7 @@ function Home() {
 
         <SimpleGrid templateColumns='repeat(3, minmax(5rem, 2fr))' marginBottom='2%'>
           <Card className='three_card' width={'25rem'} style={{ gap: '0', margin: '0', padding: '0' }} >
-            <CardBody padding={0} margin={0}>
+            <CardBody padding={0} margin={0} onClick={perfect}>
               <img src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ7JbNhTcBtFD4oRv7Z-nAgKVcmlYMs6myR4wQchvUp_ib_2nw8' alt='find your perfect trip' style={{
                 width: '100%',
                 height: '8rem',
