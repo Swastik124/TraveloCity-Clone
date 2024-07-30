@@ -2083,7 +2083,7 @@ const Navbar = () => {
                             marginTop: "2rem",
                           }}
                         >
-                          <InputGroup width={"18%"} marginLeft="3%">
+                          <InputGroup width={"18%"} marginLeft="-2%">
                             <InputLeftElement pointerEvents="none">
                               <FaLocationDot color="black.1000" />
                             </InputLeftElement>
@@ -2105,7 +2105,7 @@ const Navbar = () => {
                               }}
                             />
                           </InputGroup>
-                          <InputGroup width={"18%"} marginLeft="3%">
+                          <InputGroup width={"18%"} marginLeft="2%">
                             <InputLeftElement
                               pointerEvents="none"
                               marginLeft={"-10%"}
@@ -2129,7 +2129,7 @@ const Navbar = () => {
                               style={{
                                 marginTop: "2%",
                                 marginRight: "2%",
-                                marginLeft: "5%",
+                                marginLeft: "-1%",
                               }}
                             >
                               From
@@ -2149,7 +2149,7 @@ const Navbar = () => {
                               style={{
                                 marginTop: "2%",
                                 marginRight: "2%",
-                                marginLeft: "5%",
+                                marginLeft: "2%",
                               }}
                             >
                               To
@@ -2172,11 +2172,11 @@ const Navbar = () => {
                               }}
                             />
                           </InputGroup>
-                          <InputGroup width={"23%"}>
+                          <InputGroup width={"24%"}>
                             <InputLeftElement pointerEvents="none">
                               <FaUser
                                 color="black.1000"
-                                style={{ marginRight: "-3rem" }}
+                                style={{ marginRight: "1rem" }}
                               />
                             </InputLeftElement>
                             <Input
@@ -2186,7 +2186,7 @@ const Navbar = () => {
                               }}
                               border={"1.5px solid black"}
                               borderRadius={"1rem"}
-                              marginLeft={"6%"}
+                              marginLeft={"-5%"}
                               type="text"
                               placeholder="Travelers"
                               value={`${travelers.adults} Adults, ${travelers.children} Children, ${travelers.infants} Infants`}
