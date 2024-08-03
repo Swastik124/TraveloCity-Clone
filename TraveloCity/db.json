@@ -1,7 +1,7 @@
 {
   "hotels": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Grand Beachside Resort",
       "description": "Luxurious beachfront resort with stunning ocean views",
       "image": [
@@ -38,7 +38,7 @@
       "reviews": "66 reviews"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Cozy City Hotel",
       "description": "Charming boutique hotel in the heart of the city",
       "image": [
@@ -74,7 +74,7 @@
       "reviews": "45 reviews"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Cottage View Lodge",
       "description": "Cozy mountain lodge with breathtaking views of the surrounding peaks",
       "image": [
@@ -111,7 +111,7 @@
       "reviews": "100 reviews"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Tropical Oasis Resort",
       "description": "Luxurious resort surrounded by lush tropical gardens and a private beach",
       "image": [
@@ -149,7 +149,7 @@
       "reviews": "45 reviews"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Historic City Center Hotel",
       "description": "Charming hotel located in the heart of the historic city center",
       "image": [
@@ -186,7 +186,7 @@
       "reviews": "66 reviews"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Hotel Luxuria",
       "description": "Charming hotel located in the heart of the historic city center",
       "image": [
@@ -223,7 +223,7 @@
       "reviews": "86 reviews"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "The Grand Oasis",
       "description": "Charming hotel located in the heart of the historic city center",
       "image": [
@@ -260,7 +260,7 @@
       "reviews": "76 reviews"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Urban Retreat",
       "description": "Luxurious beachfront resort with stunning ocean views",
       "image": [
@@ -296,7 +296,7 @@
       "reviews": "45 reviews"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Serene Stay",
       "description": "Luxurious resort surrounded by lush tropical gardens and a private beach",
       "image": [
@@ -332,7 +332,7 @@
       "reviews": "45 reviews"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Beachfront Bliss",
       "description": "Luxurious beachfront resort with stunning ocean views",
       "image": [
@@ -383,6 +383,14 @@
       "firstName": "Swastik",
       "lastName": "Mohanty",
       "password": "1234",
+      "keepSignedIn": false
+    },
+    {
+      "id": "68e4",
+      "email": "anio@gmail.com",
+      "firstName": "aniii",
+      "lastName": "ok",
+      "password": "okk",
       "keepSignedIn": false
     }
   ]

@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className='epedia'>
         <div>
-            <Button onClick={epediagroup}>
+            <Button onClick={epediagroup} >
                 <Image objectFit='cover' src={Epedialogo} alt='Dan Abramov' /*_hover={"cursor='grab'"}*/ id='ep'/>
             </Button>
         </div>
@@ -58,4 +58,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Footer;

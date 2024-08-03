@@ -339,7 +339,7 @@ function Home() {
       </div><br /><br />
       <div style={{marginLeft:'6%'}}><img src={Help1} alt="Help1" /></div><br />
       <div style={{marginLeft:'6%'}}><img src={Help2} alt="Help2" /></div><br />
-      <div ><Footer></Footer></div>
+      <div ><Footer/></div>
       
     </>
   );

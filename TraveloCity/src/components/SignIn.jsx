@@ -10,7 +10,7 @@ export const SignIn = () => {
     const [userpassword, setUserPassword] = useState('');
     const [error, setError] = useState(null);
     const [keepSignedIn, setKeepSignedIn] = useState(false);
-
+    let count=0;
     const handleSubmit = (e) => {
         e.preventDefault();
         if(ValidityState()){
@@ -23,6 +23,8 @@ export const SignIn = () => {
                     {
                         if (resp[i].email === userEmail && resp[i].password === userpassword) {
                             window.location.href = "/SignIn";
+                            localStorage.setItem('firstname', resp[i].firstName);
+                            localStorage.setItem('count', (++count));
                             userfound=1;
                             
                         }}

@@ -31,26 +31,26 @@ const Header = () =>{
   function Trips(){
     window.location.href = "https://www.travelocity.com/trips"
   }
-  function signin(){
-    let x=0;
-    setCount(x++);
-    if(count%2!=0)
-    {
-      setName('SignIn');
-    }
-    else{
+  function username(){
+    let count=localStorage.getItem('count');
+    if(count>0){
+      setUserName(localStorage.getItem('firstname'));
       setName('SignOut');
-      localStorage.removeItem('username');
-      setUserName('');
-      window.location.href='/SignIn'
-    }
+      }
+      else{
+        setUserName('SignIn');
+        setName('SignIn');
+      }
+  }
+  function signin(){
+    window.location.href = "/SignIn"
   }
     
   return (
     <div className="Header">
         <div className='sub-header'>
           <div className="sub-header1">
-            <img src=".\src\assets\logo.png" alt="" className="logo" />
+            <img src=".\src\assets\logo.png" alt="" className="logo"/>
             <Menu>
               <MenuButton as={Button} rightIcon={<ChevronDownIcon />} backgroundColor={'#0b428b'} color={'white'} _hover={"backgroundColor='#0b428b'"}>Shop travel</MenuButton>
                   <MenuList>
@@ -106,8 +106,8 @@ const Header = () =>{
             <Button onClick={Listyourproperty} id='BB'  backgroundColor={'#0b428b'} color={'white'} alignSelf={'center'}>List your property</Button>
             <Button onClick={Support} id='BB' backgroundColor='#0b428b' color={'white'} alignSelf={'center'}>Support</Button>
             <Button onClick={Trips} backgroundColor={'#0b428b'} color={'white'} id='BB' alignSelf={'center'}>Trips</Button>
-            <Popover><PopoverTrigger><Button backgroundColor={'#0b428b'} color={'white'} _hover={"backgroundColor='#0b428b'"} alignSelf={'center'} onClick={username}>{userName}</Button></PopoverTrigger><Portal><PopoverContent><PopoverArrow /><PopoverHeader >Members can access discounts and special features</PopoverHeader><PopoverBody>
-            <Button colorScheme={'blue'} width={'100%'} backgroundColor={'#0b4fa2'} alignSelf={'center'} borderRadius={'5rem'} onLoad={signin}>{name}</Button></PopoverBody></PopoverContent></Portal></Popover>
+            <Popover><PopoverTrigger><Button backgroundColor={'#0b428b'} color={'white'} _hover={"backgroundColor='#0b428b'"} alignSelf={'center'} onClickCapture={username}>{userName}</Button></PopoverTrigger><Portal><PopoverContent><PopoverArrow /><PopoverHeader >Members can access discounts and special features</PopoverHeader><PopoverBody>
+            <Button colorScheme={'blue'} width={'100%'} backgroundColor={'#0b4fa2'} alignSelf={'center'} borderRadius={'5rem'} onClick={signin}>{name}</Button></PopoverBody></PopoverContent></Portal></Popover>
           </div>
         </div>
     </div>
