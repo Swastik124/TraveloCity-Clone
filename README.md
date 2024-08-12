@@ -1,12 +1,12 @@
-<b>About</b>:
+<b>About</b>:</br>
 This is a clone of travelocity.com website.
 
-This is an individual project. Completed in 5 days
+This is group project done by 5 members in 2 weeks.
 
-#Techstack :
+<b>TechStack</b>:</br>
 REACT JS | Chakra UI
 
-#Features :
+<b>Features</b> :</br>
 Login and Signup pages
 Private pages
 
