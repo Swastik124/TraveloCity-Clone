@@ -21,4 +21,26 @@ Login and Signup pages
 Private pages
 
 Website Looks Like :
+
+<b>Homepage:</b>
+ 
 ![WhatsApp Image 2024-11-09 at 13 07 24_d1e06988](https://github.com/user-attachments/assets/25a874c4-856c-4ce6-b638-bbb2c8babf70)
+
+![WhatsApp Image 2024-11-09 at 13 07 24_ad64bc40](https://github.com/user-attachments/assets/98837b66-ccad-4f01-8400-220941b4b5bc)
+
+
+<b>Signup:</b>
+
+![WhatsApp Image 2024-11-09 at 13 07 24_dc580fec](https://github.com/user-attachments/assets/02d5db67-29bf-4540-9c9e-41ad177d293b)
+
+<b>Signin:</b>
+
+![WhatsApp Image 2024-11-09 at 13 07 24_e610f331](https://github.com/user-attachments/assets/31089e02-1814-4276-a0a9-40ed2709f1ae)
+
+<b>Destination Details:</b>
+
+![WhatsApp Image 2024-11-09 at 13 07 24_87dae2a4](https://github.com/user-attachments/assets/eeb1ad7b-c5a9-49c0-aa53-a8b565d516e2)
+
+![WhatsApp Image 2024-11-09 at 13 07 24_fd036e9e](https://github.com/user-attachments/assets/fe65e17f-4d4b-4205-8a82-02dde32fc359)
+
+
