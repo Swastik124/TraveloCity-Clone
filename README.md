@@ -21,3 +21,4 @@ Login and Signup pages
 Private pages
 
 Website Looks Like :
+![WhatsApp Image 2024-11-09 at 13 07 24_d1e06988](https://github.com/user-attachments/assets/25a874c4-856c-4ce6-b638-bbb2c8babf70)
