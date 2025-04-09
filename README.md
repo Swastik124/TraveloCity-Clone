@@ -1,5 +1,5 @@
 <b>About</b>:</br>
-Travelocity Website Clone
+Travelo-City Web Application
 
 This project is a clone of the Travelocity website, built to practice and demonstrate front-end and back-end web development skills. The clone replicates key features of Travelocity, including:
 
@@ -11,7 +11,7 @@ This project is a clone of the Travelocity website, built to practice and demons
 
 This project employs technologies such as HTML, CSS, JavaScript, and relevant frameworks (React) to mimic real-world functionalities. It serves as an educational resource and a portfolio piece to showcase the ability to recreate complex, real-world web applications.
 
-This is group project done by 5 members in 2 weeks.
+This is group project done by 5 members in 1 weeks.
 
 <b>TechStack</b>:</br>
 REACT JS | Chakra UI
